@@ -1,0 +1,28 @@
+name: Actualizar datos
+
+on:
+  schedule:
+    - cron: "30 22 * * 1-5"   # lunes a viernes, después del cierre de Wall Street
+  workflow_dispatch:           # permite correrlo a mano desde la pestaña Actions
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Reconstruir la página
+        run: python build.py
+      - name: Publicar si hubo cambios
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html fundamentals.json
+          git diff --cached --quiet || git commit -m "Datos actualizados"
+          git push
