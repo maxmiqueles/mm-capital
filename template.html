@@ -38,7 +38,8 @@ header.top{background:var(--surface);border-bottom:1px solid var(--line);positio
 .brand{display:flex;align-items:baseline;gap:10px}
 .brand b{font-family:var(--display);font-size:20px;letter-spacing:.2px}
 .brand span{font-size:12px;color:var(--muted)}
-nav.tabs{display:flex;gap:4px;flex-wrap:wrap;margin-left:auto}
+nav.tabs{display:flex;gap:4px;flex-wrap:wrap}
+.mode{margin-left:auto}
 nav.tabs button{background:none;border:1px solid transparent;border-radius:999px;padding:7px 14px;cursor:pointer;color:var(--muted);font-weight:500;display:flex;gap:8px;align-items:center}
 nav.tabs button .step{font-family:var(--mono);font-size:11px;border:1px solid var(--line);border-radius:999px;width:20px;height:20px;display:inline-grid;place-items:center}
 nav.tabs button[aria-selected="true"]{color:var(--accent);background:var(--accent-soft)}
@@ -89,7 +90,7 @@ fieldset{border:0;margin:0;padding:0}
 .opts label:has(input:focus-visible){outline:2px solid var(--accent);outline-offset:2px}
 .reco{display:grid;gap:12px}
 .fitbar{height:8px;background:var(--line);border-radius:4px;overflow:hidden}
-.fitbar i{display:block;height:100%;background:var(--fc)}
+.fitbar i{display:block;height:100%;background:var(--accent)}
 .btn{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#fff;border:0;border-radius:8px;padding:10px 16px;cursor:pointer;font-weight:600;text-decoration:none;width:max-content}
 .btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}
 
@@ -107,7 +108,7 @@ fieldset{border:0;margin:0;padding:0}
 ul.args{margin:0;padding:0;list-style:none;display:grid;gap:10px}
 ul.args li{display:grid;grid-template-columns:22px 1fr;gap:8px}
 ul.args li::before{content:"✓";color:var(--good);font-weight:700}
-ul.args.neg li::before{content:"–";color:var(--muted)}
+ul.args.minus li::before{content:"–";color:var(--muted)}
 details{border-top:1px solid var(--line);padding:10px 0}
 details:first-of-type{border-top:0}
 summary{cursor:pointer;font-weight:600}
@@ -160,7 +161,7 @@ th.sort:hover{color:var(--ink)}
 .frow{display:grid;grid-template-columns:repeat(auto-fit,minmax(165px,1fr));gap:12px;align-items:end}
 .frow label{display:grid;gap:4px;font-size:12px;color:var(--muted)}
 .frow input{font:inherit;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:8px 10px;width:100%;font-variant-numeric:tabular-nums}
-.frow.sup{grid-template-columns:repeat(3,minmax(0,170px)) minmax(200px,1fr);margin-top:12px;padding-top:12px;border-top:1px solid var(--line)}
+.frow.sup{grid-template-columns:repeat(4,minmax(0,170px));margin-top:12px;padding-top:12px;border-top:1px solid var(--line)}
 .hero-num{font-size:clamp(28px,4vw,40px);font-weight:600;color:var(--accent);font-variant-numeric:tabular-nums;line-height:1.1}
 .actions{display:flex;gap:8px;flex-wrap:wrap}
 .sheet{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:clamp(18px,4vw,40px);display:grid;gap:22px;max-width:860px}
@@ -172,6 +173,32 @@ th.sort:hover{color:var(--ink)}
 .kv div{display:grid;gap:2px}.kv span{font-size:12px;color:var(--muted)}.kv b{font-variant-numeric:tabular-nums}
 @media (max-width:820px){.frow.sup{grid-template-columns:1fr 1fr}.frow.sup p{grid-column:1/-1}}
 @media print{header.top,.noprint,.disclaimer{display:none!important}.view{display:none!important}#v-cierre{display:block!important}main{padding:0}.sheet{border:0;padding:0;max-width:none}body{font-size:12.5px}}
+.meter{display:grid;grid-template-columns:repeat(5,1fr);gap:4px}.meter i{height:8px;border-radius:4px;background:var(--line)}.meter i.on{background:var(--accent)}
+.welcome{max-width:720px;margin:6vh auto 0;display:grid;gap:18px}
+.welcome h1{font-size:clamp(30px,5vw,46px)}
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;counter-reset:s}
+.steps li{counter-increment:s;border:1px solid var(--line);border-radius:var(--r);padding:14px;display:grid;gap:4px;font-size:14px}
+.steps li::before{content:counter(s);margin-bottom:4px;font-family:var(--mono);font-size:12px;color:var(--accent);border:1px solid var(--accent);border-radius:50%;width:22px;height:22px;display:grid;place-items:center}
+.steps b{font-size:15px}
+.btn.big{padding:14px 28px;font-size:17px}
+.brand a{color:inherit;text-decoration:none}
+body[data-mode="cliente"] .exec{display:none!important}
+.mode{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:6px 12px;cursor:pointer;font-size:13px;color:var(--muted);display:inline-flex;gap:8px;align-items:center}
+.mode i{width:26px;height:14px;border-radius:999px;background:var(--line);position:relative;display:inline-block}
+.mode i::after{content:"";position:absolute;top:2px;left:2px;width:10px;height:10px;border-radius:50%;background:var(--surface)}
+.mode[aria-pressed="true"]{color:var(--accent);border-color:var(--accent)}
+.mode[aria-pressed="true"] i{background:var(--accent)}.mode[aria-pressed="true"] i::after{left:14px}
+.note-exec{border:1px dashed var(--accent);background:var(--accent-soft);border-radius:var(--r);padding:10px 14px;font-size:13px}
+.stack{display:flex;height:22px;border-radius:6px;overflow:hidden;background:var(--paper)}
+.stack i{display:block;height:100%}
+.ba{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media (max-width:640px){.ba{grid-template-columns:1fr}}
+.ba h3{margin-bottom:8px}.ba ul{list-style:none;margin:8px 0 0;padding:0;display:grid;gap:3px;font-size:13px}
+.ba li{display:flex;gap:8px;align-items:center}.ba li i{width:10px;height:10px;border-radius:2px;display:inline-block;flex:none}
+.wrap td,.wrap th{white-space:normal}
+.sign{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:34px}.sign div{border-top:1px solid var(--ink);padding-top:6px;font-size:12px;color:var(--muted)}
+.sheet.reg{margin-top:20px}
+@media print{.sheet.reg{break-before:page;margin-top:0}}
 .disclaimer{margin-top:36px;padding-top:16px;border-top:1px solid var(--line);font-size:12px;color:var(--muted);display:grid;gap:6px;max-width:90ch}
 .rule{display:grid;gap:8px}
 .rule ol{margin:0;padding-left:18px;display:grid;gap:4px;font-size:14px}
@@ -181,7 +208,8 @@ th.sort:hover{color:var(--ink)}
 <body>
 <header class="top">
   <div class="top-inner">
-    <div class="brand"><b>MM Capital</b><span id="asof"></span></div>
+    <div class="brand"><a href="#inicio"><b>MM Capital</b></a><span id="asof"></span></div>
+    <button class="mode noprint" id="b-mode" type="button" aria-pressed="false"><i></i>Modo ejecutivo</button>
     <nav class="tabs" role="tablist" aria-label="Secciones">
       <button role="tab" id="t-diagnostico" data-view="diagnostico"><span class="step">1</span>Diagnóstico</button>
       <button role="tab" id="t-propuesta" data-view="propuesta"><span class="step">2</span>Propuesta</button>
@@ -193,28 +221,50 @@ th.sort:hover{color:var(--ink)}
 </header>
 
 <main>
+<!-- ============ INICIO ============ -->
+<section class="view" id="v-inicio">
+  <div class="welcome">
+    <div class="eyebrow">Bienvenido a MM Capital</div>
+    <h1>Hola. Vamos a ayudarte a encontrar el mejor portafolio para ti.</h1>
+    <p class="lead" style="margin:0">Te hacemos unas preguntas simples, armamos un portafolio a tu medida y te mostramos con datos reales cómo le habría ido en los últimos 10 años. Toma unos 5 minutos.</p>
+    <ol class="steps">
+      <li><b>Te conocemos</b><span class="muted">Tus metas, tu plazo y cuánto riesgo te acomoda.</span></li>
+      <li><b>Armamos tu portafolio</b><span class="muted">Acciones, renta fija y oro, en la mezcla que calza contigo.</span></li>
+      <li><b>Te mostramos el respaldo</b><span class="muted">Cómo le fue frente a los fondos más grandes del mundo.</span></li>
+      <li><b>Te llevas tu propuesta</b><span class="muted">Un resumen claro, con tus números.</span></li>
+    </ol>
+    <a class="btn big" href="#diagnostico">Comenzar</a>
+    <p class="xs muted" id="welcome-note"></p>
+  </div>
+</section>
+
 <!-- ============ 1. DIAGNÓSTICO ============ -->
 <section class="view" id="v-diagnostico" role="tabpanel" aria-labelledby="t-diagnostico">
   <div class="eyebrow">Paso 1 · Diagnóstico</div>
-  <h1>¿Qué fondo calza con este cliente?</h1>
-  <p class="lead">Completa los datos del cliente y su perfil. La página arma la recomendación, la propuesta y el cierre con sus números, en pesos.</p>
+  <h1>Cuéntanos de ti</h1>
+  <p class="lead">Con tus datos y tus respuestas armamos tu portafolio. No hay respuestas buenas ni malas.</p>
 
   <div class="section card">
-    <div class="section-head"><h2>Datos del cliente</h2><span class="xs muted" id="fx-note"></span></div>
+    <div class="section-head"><h2>Tus datos</h2><span class="xs muted" id="fx-note"></span></div>
+    <p class="small" style="margin:-4px 0 12px">Total a invertir: <b id="tot-note"></b>. Lo calculamos con lo que tienes hoy.</p>
     <div class="frow">
       <label for="c-nombre">Nombre<input id="c-nombre" type="text" placeholder="Ej.: Camila Rojas" autocomplete="off"></label>
-      <label for="c-monto">Monto a invertir ($)<input id="c-monto" class="money" inputmode="numeric" value="10.000.000"></label>
+      <label for="h-cc">Hoy en cuenta corriente o vista ($)<input id="h-cc" class="money" inputmode="numeric" value="3.000.000"></label>
+      <label for="h-dap">Hoy en depósito a plazo ($)<input id="h-dap" class="money" inputmode="numeric" value="7.000.000"></label>
+      <label for="h-otras">Hoy en otras inversiones ($)<input id="h-otras" class="money" inputmode="numeric" value="0"></label>
       <label for="c-aporte">Aporte mensual ($)<input id="c-aporte" class="money" inputmode="numeric" value="200.000"></label>
       <label for="c-plazo">Plazo (años)<input id="c-plazo" type="number" min="1" max="40" step="1" value="5"></label>
-      <label for="c-meta">Meta, opcional ($)<input id="c-meta" class="money" inputmode="numeric" value="40.000.000"></label>
     </div>
-    <div class="frow sup">
+    <details class="exec" style="margin-top:12px;border-top:1px solid var(--line);padding-top:10px"><summary class="small">Supuestos del ejecutivo</summary><div class="frow sup" style="border:0;padding-top:8px">
       <label for="s-dap">Depósito a plazo, tasa anual (%)<input id="s-dap" type="number" step="0.1" min="0" max="25"></label>
       <label for="s-ipc">Inflación anual (%)<input id="s-ipc" type="number" step="0.1" min="0" max="25"></label>
+      <label for="s-otras">Rentabilidad de sus otras inversiones (%)<input id="s-otras" type="number" step="0.5" min="0" max="25" value="5"></label>
       <label for="s-hair">Descuento de prudencia (%)<input id="s-hair" type="number" step="5" min="0" max="80" value="30"></label>
-      <p class="xs muted" id="sup-note"></p>
-    </div>
+      <p class="xs muted" id="sup-note" style="grid-column:1/-1"></p>
+    </div></details>
   </div>
+
+  <p class="note-exec exec section">Guía para el ejecutivo: deja que el cliente responda con sus palabras y marca la opción más cercana. No sugieras respuestas: el perfil tiene que ser suyo.</p>
 
   <div class="section split">
     <form class="card" id="quiz" onsubmit="return false"></form>
@@ -222,8 +272,8 @@ th.sort:hover{color:var(--ink)}
   </div>
 
   <div class="section">
-    <h2>Los cuatro fondos</h2>
-    <div class="grid g4" id="tiles"></div>
+    <h2>Los fondos que combinamos</h2>
+    <div class="grid g3" id="tiles"></div>
     <p class="xs muted" id="tiles-note"></p>
   </div>
 </section>
@@ -244,7 +294,7 @@ th.sort:hover{color:var(--ink)}
 
   <div class="section card">
     <div class="section-head">
-      <div><h2>Qué habría pasado con USD 10.000</h2><p class="small muted">Valor de la inversión, reinvirtiendo dividendos. Fondos MM netos de comisión de 0,75% anual y costos de transacción.</p></div>
+      <div><h2>Qué habría pasado con USD 10.000</h2><p class="small muted">Valor de la inversión, reinvirtiendo dividendos. Fondos MM netos de comisión y costos de transacción.</p></div>
       <div class="seg" id="range" aria-label="Período">
         <button data-y="10" aria-pressed="true">10 años</button><button data-y="5">5 años</button><button data-y="3">3 años</button><button data-y="1">1 año</button>
       </div>
@@ -277,7 +327,7 @@ th.sort:hover{color:var(--ink)}
     <div class="tbl-wrap"><table id="t-cal" class="heat"></table></div>
   </div>
 
-  <div class="section card">
+  <div class="section card exec">
     <h2>Cómo leer estos ratios</h2>
     <div class="gloss">
       <div><b>Rentabilidad anualizada (CAGR)</b><span class="small muted">Lo que rindió en promedio cada año, con interés compuesto. Un 10% anual por 10 años multiplica el capital por 2,6.</span></div>
@@ -296,19 +346,19 @@ th.sort:hover{color:var(--ink)}
 <section class="view" id="v-cierre" role="tabpanel" aria-labelledby="t-cierre">
   <div class="eyebrow noprint">Paso 4 · Cierre</div>
   <div class="section-head noprint">
-    <div><h1>Propuesta lista para enviar</h1><p class="lead">Se arma sola con los datos del cliente y el fondo elegido. Cópiala al correo o guárdala como PDF.</p></div>
+    <div><h1>Propuesta lista para enviar</h1><p class="lead">Se arma sola con los datos del cliente. Incluye la propuesta y el registro de su perfil. Cópiala al correo o guárdala como PDF.</p></div>
     <div class="actions"><button class="btn" id="b-copy" type="button">Copiar resumen</button><button class="btn ghost" id="b-print" type="button">Imprimir o guardar PDF</button></div>
   </div>
   <div class="section noprint"><div class="fund-picker" id="pick-cierre" aria-label="Elegir fondo"></div></div>
-  <div class="section"><article class="sheet" id="sheet"></article></div>
+  <div class="section"><article class="sheet" id="sheet"></article><article class="sheet reg" id="reg"></article></div>
 </section>
 
 <!-- ============ MÉTODO ============ -->
 <section class="view" id="v-analisis" role="tabpanel" aria-labelledby="t-analisis">
   <div class="eyebrow">Método</div>
-  <h1>De 64 acciones a cuatro fondos</h1>
-  <p class="lead">Cada fondo sale de reglas fijas aplicadas al mismo universo de 64 empresas grandes de EE.UU. Las reglas solo usan información disponible en cada fecha de rebalanceo, para que el historial no se construya mirando el futuro.</p>
-  <div class="section grid g4" id="rules"></div>
+  <h1 id="met-title"></h1>
+  <p class="lead" id="met-lead"></p>
+  <div class="section grid g3" id="rules"></div>
 
   <div class="section">
     <div class="section-head">
@@ -322,7 +372,7 @@ th.sort:hover{color:var(--ink)}
       </div>
     </div>
     <div class="tbl-wrap" style="max-height:620px"><table id="t-stocks"></table></div>
-    <p class="xs muted">Haz clic en un encabezado para ordenar. Momentum 12‑1: retorno de los últimos 12 meses sin contar el último. Fundamentales (P/U, ROE, dividendo, beta) a la fecha de corte.</p>
+    <p class="xs muted">Haz clic en un encabezado para ordenar. Momentum 12‑1: retorno de los últimos 12 meses sin contar el último. Las acciones chilenas se miden en dólares.</p>
   </div>
 
   <div class="section card">
@@ -343,28 +393,41 @@ th.sort:hover{color:var(--ink)}
 const D = /*__DATA__*/null;
 
 const FUNDS = {
-  crecimiento:{name:'MM Tendencia',short:'Tendencia',tag:'Crecimiento de capital siguiendo a las acciones líderes',color:'--f-ten',risk:'Alto',horizon:'5 años o más',
+  portafolio:{name:'Tu portafolio',short:'Portafolio',tag:'',color:'--f-ten',risk:'',horizon:'',comps:['AOR','VWELX','SPY'],main:'AOR',who:'',whonot:'',rule:[]},
+  crecimiento:{name:'MM Tendencia',short:'Tendencia',tag:'Acciones de EE.UU. con más fuerza de precio',color:'--f-ten',risk:'Alto',horizon:'5 años o más',
     comps:['QQQ','FCNTX','AGTHX','SPY'],main:'QQQ',
     who:'Inversionista con horizonte largo que tolera caídas fuertes a cambio de maximizar el crecimiento.',
     whonot:'Quien necesita el dinero en menos de 5 años o vendería en una caída de 30%.',
-    rule:['Universo: 64 acciones grandes de EE.UU.','Ordena por momentum 12‑1 (retorno de 12 meses sin el último mes).','Toma las 12 con mayor momentum, máximo 4 por sector.','Pesos iguales. Selección anual en noviembre, pesos reajustados cada trimestre.']},
-  dividendos:{name:'MM Dividendos Crecientes',short:'Dividendos',tag:'Renta que crece año a año, de empresas que suben su dividendo',color:'--f-div',risk:'Medio-alto',horizon:'3 años o más',
+    rule:['Universo: acciones del S&P 500 que ya estaban en el índice en cada fecha.','Ordena por momentum 12‑1 (retorno de 12 meses sin el último mes).','Toma las 25 con mayor momentum, máximo 5 por sector.','Pesos iguales. Selección anual en noviembre, pesos reajustados cada trimestre.']},
+  dividendos:{name:'MM Dividendos Crecientes',short:'Dividendos',tag:'Empresas de EE.UU. que pagan y suben su dividendo',color:'--f-div',risk:'Medio-alto',horizon:'3 años o más',
     comps:['SCHD','VIG','VDIGX','SPY'],main:'SCHD',
-    who:'Quien busca un flujo de dividendos que crezca con el tiempo, con menos sensibilidad al mercado que el S&P 500.',
-    whonot:'Quien busca el máximo crecimiento o no tolera caídas de 30% en crisis.',
-    rule:['Filtra empresas con dividendo actual mayor o igual al de hace 3 años y dividend yield de 1,5% o más.','Excluye el 20% más volátil del universo.','Puntaje: ranking de dividend yield + ranking de crecimiento del dividendo a 5 años.','Top 12, máximo 3 por sector, pesos iguales. Selección anual.']},
-  defensivo:{name:'MM Defensivo',short:'Defensivo',tag:'Acciones de baja volatilidad para estar invertido con menos sobresaltos',color:'--f-def',risk:'Medio',horizon:'3 años o más',
+    who:'Quien busca un flujo de dividendos que crezca con el tiempo.',
+    whonot:'Quien busca el máximo crecimiento o no tolera caídas fuertes en crisis.',
+    rule:['Filtra acciones del S&P 500 con dividendo mayor o igual al de hace 3 años y dividend yield de 1,5% o más.','Excluye el 20% más volátil.','Puntaje: ranking de dividend yield + ranking de crecimiento del dividendo a 5 años.','Top 25, máximo 5 por sector, pesos iguales. Selección anual.']},
+  defensivo:{name:'MM Defensivo',short:'Defensivo',tag:'Acciones de EE.UU. de baja volatilidad',color:'--f-def',risk:'Medio',horizon:'3 años o más',
     comps:['USMV','SPLV','SPY'],main:'USMV',
-    who:'Quien quiere exposición a acciones pero con la mitad de la sensibilidad al mercado.',
+    who:'Quien quiere estar en acciones pero con menos sensibilidad al mercado.',
     whonot:'Quien busca ganarle al S&P 500 en mercados alcistas fuertes.',
-    rule:['Mide la volatilidad de cada acción en los últimos 12 meses.','Toma las 12 menos volátiles, máximo 3 por sector.','Pondera por volatilidad inversa: la más estable pesa más.','Selección anual, pesos reajustados cada trimestre.']},
-  balanceado:{name:'MM Balanceado',short:'Balanceado',tag:'Acciones, bonos del Tesoro y oro en una sola cartera',color:'--f-bal',risk:'Moderado',horizon:'2 años o más',
-    comps:['VWELX','AOR','SPY'],main:'VWELX',
-    who:'Primer inversionista, o quien prioriza dormir tranquilo: la mayor caída fue de la mitad que la del S&P 500.',
-    whonot:'Quien tiene horizonte muy largo y tolera volatilidad: ahí rinde más un fondo 100% acciones.',
-    rule:['60% en 15 acciones con mejor puntaje combinado: momentum + baja volatilidad (máximo 3 por sector).','25% en bonos del Tesoro de 7 a 10 años (IEF).','15% en oro (GLD).','Rebalanceo trimestral a los pesos objetivo; acciones revisadas cada año.']},
+    rule:['Mide la volatilidad de cada acción del S&P 500 en los últimos 12 meses.','Toma las 25 menos volátiles, máximo 5 por sector.','Pondera por volatilidad inversa: la más estable pesa más.','Selección anual, pesos reajustados cada trimestre.']},
+  global:{name:'MM Global',short:'Global',tag:'El mundo en cinco ETF de los más grandes',color:'--f-ten',risk:'Medio-alto',horizon:'5 años o más',
+    comps:['VT','ACWI','SPY'],main:'VT',
+    who:'Quien quiere diversificar fuera de EE.UU. sin elegir país ni empresa.',
+    whonot:'Quien solo quiere exposición a EE.UU.',
+    rule:['Cinco ETF: EE.UU. total (VTI), desarrollados (VEA), emergentes (VWO), Nasdaq‑100 (QQQ) y valor (VTV).','Pondera por volatilidad inversa: el más estable pesa más.','Revisión anual, pesos reajustados cada trimestre.','Comisión de 0,40% anual.']},
+  chile:{name:'MM Chile',short:'Chile',tag:'Acciones del IPSA con tendencia y baja volatilidad',color:'--f-ten',risk:'Alto',horizon:'5 años o más',
+    comps:['ECH','SPY'],main:'ECH',
+    who:'Quien quiere invertir en empresas chilenas que conoce, como una parte del portafolio.',
+    whonot:'Quien busca que sea su única inversión: el mercado chileno es chico y concentrado.',
+    rule:['Universo: acciones chilenas del IPSA.','Puntaje: ranking de momentum 12‑1 + ranking de baja volatilidad.','Top 10, máximo 3 por sector, pesos iguales. Selección anual.','Se mide en dólares para compararlo con el resto.']},
+  rentafija:{name:'MM Tesoro',short:'Tesoro',tag:'Bonos del Tesoro de EE.UU. a tres plazos',color:'--f-ten',risk:'Bajo',horizon:'1 año o más',
+    comps:['BND','AGG'],main:'BND',
+    who:'Quien necesita estabilidad: es el ancla del portafolio.',
+    whonot:'Quien busca crecimiento: en 10 años los bonos rindieron muy poco.',
+    rule:['50% en bonos del Tesoro de 1 a 3 años (SHY).','35% en bonos de 7 a 10 años (IEF).','15% en bonos de 20 años o más (TLT).','Rebalanceo trimestral. Comisión de 0,30% anual.']},
 };
-const FK = Object.keys(FUNDS);
+const FK = Object.keys(FUNDS).filter(k=>k!=='portafolio');
+const PK = Object.keys(FUNDS);
+const feeOf = k => k==='portafolio' ? PW.reduce((a,[b,w])=>a+w*(D.fees[b]||0),0) : D.fees[k];
 const BENCH_COL = ['--b1','--b2','--b3','--b4'];
 const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
 const pct = (x,d=1,sign=false) => x==null||isNaN(x) ? '–' : ((sign&&x>0?'+':'') + (x*100).toFixed(d).replace('.',',') + '%');
@@ -373,7 +436,7 @@ const dots = n => String(Math.round(Math.abs(n))).replace(/\B(?=(\d{3})+(?!\d))/
 const usd = x => 'USD ' + dots(x);
 const clp = x => (x<0?'-':'') + '$' + dots(x);
 const parseMoney = v => +String(v).replace(/[^\d]/g,'') || 0;
-const C = {nombre:'', monto:1e7, aporte:2e5, plazo:5, meta:4e7, dap:D.cl.dap, ipc:D.cl.ipc, hair:0.30};
+const C = {nombre:'', monto:1e7, aporte:2e5, plazo:5, meta:0, dap:D.cl.dap, ipc:D.cl.ipc, hair:0.30, cc:3e6, dapAmt:7e6, otras:0, rOtras:0.05};
 const who = () => C.nombre || 'el cliente';
 const pp = x => (x>0?'+':'') + (x*100).toFixed(1).replace('.',',') + ' pp';
 const M = D.metrics;
@@ -382,24 +445,25 @@ const shortLbl = k => FUNDS[k] ? FUNDS[k].name : k;
 const fdate = s => { const [y,m,d]=s.split('-'); return `${+d} ${['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'][+m-1]} ${y}`; };
 const esc = s => String(s).replace(/[&<>"]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 
-let state = { fund:'crecimiento', range:10 };
-try { const s = localStorage.getItem('mm-fund'); if (s && FUNDS[s]) state.fund = s; } catch(e){}
+let state = { fund:'portafolio', range:10 };
 
 document.getElementById('asof').textContent = 'Datos al ' + fdate(D.asof);
 document.getElementById('src').textContent = `Fuente: precios ajustados, dividendos y fundamentales de Yahoo Finance (vía yfinance). Período del backtest: ${fdate(D.start)} a ${fdate(D.asof)}. Tasa libre de riesgo: T‑Bill de 13 semanas.`;
 
 /* ---------- routing ---------- */
-const VIEWS = ['diagnostico','propuesta','respaldo','cierre','analisis'];
+const VIEWS = ['inicio','diagnostico','propuesta','respaldo','cierre','analisis'];
 function show(v){
-  if(!VIEWS.includes(v)) v='diagnostico';
+  if(!VIEWS.includes(v)) v='inicio';
   VIEWS.forEach(x=>{
     document.getElementById('v-'+x).classList.toggle('on', x===v);
-    document.getElementById('t-'+x).setAttribute('aria-selected', x===v);
+    const t=document.getElementById('t-'+x); if(t) t.setAttribute('aria-selected', x===v);
   });
   if(v==='respaldo') drawCharts();
+  if(v==='propuesta') drawFan('c-fan');
+  if(v==='cierre') drawFan('c-fan2');
   window.scrollTo({top:0});
 }
-document.querySelectorAll('nav.tabs button').forEach(b=>b.addEventListener('click',()=>{ location.hash = b.dataset.view; }));
+document.querySelectorAll('nav.tabs button[data-view]').forEach(b=>b.addEventListener('click',()=>{ location.hash = b.dataset.view; }));
 window.addEventListener('hashchange',()=>show(location.hash.slice(1)));
 
 function setFund(k){
@@ -413,92 +477,149 @@ function setFund(k){
 function renderTiles(){
   const spy = M.SPY;
   document.getElementById('tiles').innerHTML = FK.map(k=>{
-    const m=M[k], f=FUNDS[k], c=M[f.main];
-    const edge = {
-      crecimiento:[`${pp(m.cagr10-c.cagr10)} anual vs ${f.main} en 10 años`, m.cagr10>=c.cagr10],
-      dividendos:[`${pp(m.cagr5-c.cagr5)} anual vs ${f.main} en 5 años`, m.cagr5>=c.cagr5],
-      defensivo:[`Beta ${num(m.beta)} vs 1,00 del S&P 500`, true],
-      balanceado:[`Peor caída ${pct(m.maxdd,0)} vs ${pct(spy.maxdd,0)} del S&P 500`, true]}[k];
+    const m=M[k], f=FUNDS[k], c=M[f.main], d=m.cagr10-c.cagr10;
     return `<button class="card ftile" style="--fc:var(${f.color})" data-f="${k}" aria-label="Ver ${esc(f.name)}">
       <span class="small muted">${esc(f.name)}</span>
       <span class="big num">${pct(m.cagr10)}</span>
-      <span class="xs muted">anual en 10 años · ${usd(m.final)} desde USD 10.000</span>
-      <span><span class="chip ${edge[1]?'good':'bad'}">${edge[0]}</span></span>
+      <span class="xs muted">anual en 10 años · ${esc(f.tag)}</span>
+      <span><span class="chip ${d>=0?'good':''}">${pp(d)} anual vs ${f.main}</span></span>
     </button>`;
   }).join('');
-  document.getElementById('tiles-note').textContent = `Referencia: el S&P 500 (SPY) rindió ${pct(spy.cagr10)} anual en el mismo período y convirtió USD 10.000 en ${usd(spy.final)}.`;
+  document.getElementById('tiles-note').textContent = `Rentabilidades en dólares, netas de comisión. Referencia: el S&P 500 (SPY) rindió ${pct(spy.cagr10)} anual en el mismo período. El oro entra al portafolio con el ETF GLD.`;
   document.querySelectorAll('#tiles .ftile').forEach(b=>b.addEventListener('click',()=>{ setFund(b.dataset.f); location.hash='propuesta'; }));
 }
 
-/* ---------- 1. quiz ---------- */
+/* ---------- 1. perfil y portafolio ---------- */
 const QUIZ = [
-  {q:'¿Qué buscas principalmente con esta inversión?', o:[
-    ['Hacer crecer mi capital lo más posible',{crecimiento:3}],
-    ['Recibir ingresos que crezcan en el tiempo',{dividendos:3}],
-    ['Proteger lo que tengo y crecer de a poco',{defensivo:2,balanceado:2}],
-    ['Un poco de todo, sin complicarme',{balanceado:3}]]},
-  {q:'Si tu inversión cae 25% en un mes, ¿qué haces?', o:[
-    ['Vendo para no perder más',{balanceado:3}],
-    ['Espero, pero con nervios',{defensivo:2,balanceado:1}],
-    ['Mantengo sin problema',{dividendos:2,defensivo:1}],
-    ['Aprovecho y compro más',{crecimiento:3}]]},
-  {q:'¿Necesitas que la inversión te entregue flujo de caja?', o:[
-    ['Sí, me interesan los dividendos',{dividendos:3}],
-    ['No, prefiero reinvertir todo',{crecimiento:1,balanceado:1}]]},
-  {q:'¿Cuánta experiencia tienes invirtiendo?', o:[
-    ['Ninguna',{balanceado:2}],
-    ['Algo: fondos mutuos o depósitos',{defensivo:1,dividendos:1}],
-    ['Bastante: acciones, ETF o trading',{crecimiento:2}]]},
+  {k:'risk', q:'¿Para qué quieres invertir esta plata?', o:[['Para algo puntual en pocos años (pie, auto, viaje)',0],['Para tener un respaldo por si pasa algo',1],['Para hacer crecer mis ahorros',2],['Para mi jubilación o el largo plazo',3]]},
+  {k:'risk', q:'Esta plata, ¿qué parte es de tus ahorros?', o:[['Casi todo lo que tengo',0],['Cerca de la mitad',1.5],['Una parte chica',3]]},
+  {k:'risk', q:'¿Cómo son tus ingresos?', o:[['Fijos y estables',3],['Varían mes a mes',1.5],['Hoy no tengo ingresos',0]]},
+  {k:'risk', q:'Si tuvieras una urgencia, ¿tendrías que sacar plata de aquí?', o:[['Sí, es mi único ahorro',0],['Tal vez una parte',1.5],['No, tengo un fondo aparte',3]]},
+  {k:'risk', q:'Imagina que inviertes $1.000.000 y al mes vale $800.000. ¿Qué haces?', o:[['Saco todo',0],['Saco una parte',1],['Espero a que se recupere',2],['Invierto más, está barato',3]]},
+  {k:'risk', q:'¿Qué prefieres?', o:[['Ganar poco, pero seguro',0],['Un equilibrio',1.5],['Ganar más, aunque suba y baje mucho',3]]},
+  {k:'risk', q:'¿Has invertido antes?', o:[['Nunca',0],['Depósitos a plazo o fondos mutuos',1.5],['Acciones, ETF o cripto',3]]},
+  {k:'income', q:'¿Necesitas sacar plata de esta inversión todos los meses?', o:[['Sí',1],['No',0]]},
+  {k:'chile', q:'¿Te gustaría tener parte en empresas chilenas?', o:[['Sí, me gusta invertir en lo que conozco',1],['Me da igual',0],['Prefiero que esté afuera',-1]]},
 ];
-const DEFAULT_ANS = [0,2,1,2];
-const plazoScore = n => n<3 ? {balanceado:3,defensivo:1} : n<=5 ? {defensivo:2,dividendos:2} : {crecimiento:3,dividendos:1};
+const DEFAULT_ANS = [2,1,0,1,2,1,1,1,1];
+const LEVELS = ['Conservador','Moderado','Balanceado','Crecimiento','Agresivo'];
+const RISK = ['Bajo','Medio-bajo','Medio','Medio-alto','Alto'];
+const ALLOC = [[.20,.65,.15],[.40,.48,.12],[.60,.30,.10],[.80,.14,.06],[.95,0,.05]];   // acciones, renta fija, oro
+const MAINB = ['AOK','AOM','AOR','AOA','AOA'];
+const CLASSOF = {crecimiento:'Acciones EE.UU.',dividendos:'Acciones EE.UU.',defensivo:'Acciones EE.UU.',global:'Acciones globales',chile:'Acciones Chile',rentafija:'Renta fija',GLD:'Oro'};
+const blockName = k => k==='GLD' ? 'Oro (ETF GLD)' : FUNDS[k].name;
 function profile(){
-  const sc = Object.fromEntries(FK.map(k=>[k,0])); let max=3; const ans=[];
-  Object.entries(plazoScore(C.plazo)).forEach(([k,v])=>sc[k]+=v);
+  let sum=0, max=0, income=0, chile=0; const ans=[];
   QUIZ.forEach((x,i)=>{
-    const sel = document.querySelector(`input[name=q${i}]:checked`);
-    max += Math.max(...x.o.map(o=>Math.max(...Object.values(o[1]))));
-    if(sel){ Object.entries(x.o[+sel.value][1]).forEach(([k,v])=>sc[k]+=v); ans.push([x.q, x.o[+sel.value][0]]); }
+    const sel=document.querySelector(`input[name=q${i}]:checked`); if(!sel) return;
+    const [txt,v]=x.o[+sel.value]; ans.push([x.q,txt]);
+    if(x.k==='risk'){ sum+=v; max+=Math.max(...x.o.map(o=>o[1])); } else if(x.k==='income') income=v; else chile=v;
   });
-  const ord = FK.slice().sort((a,b)=>sc[b]-sc[a]);
-  return {sc,max,ord,ans};
+  const score = max ? sum/max : 0;
+  const want = Math.min(4, Math.floor(score*5));
+  const n=C.plazo, cap = n<2?0 : n<4?1 : n<6?2 : n<10?3 : 4;
+  const level = Math.min(want,cap);
+  const [eq,rf,oro]=ALLOC[level];
+  const sl = level<=1 ? {crecimiento:.10,dividendos:.25,defensivo:.35,global:.20,chile:.10}
+           : level===2 ? {crecimiento:.20,dividendos:.20,defensivo:.25,global:.25,chile:.10}
+           : {crecimiento:.30,dividendos:.15,defensivo:.15,global:.30,chile:.10};
+  if(income){ sl.dividendos+=.15; sl.crecimiento=Math.max(0,sl.crecimiento-.05); sl.global-=.10; }
+  if(chile>0){ sl.chile=.20; sl.global-=.10; }
+  if(chile<0){ sl.global+=sl.chile; sl.chile=0; }
+  const tot=Object.values(sl).reduce((a,b)=>a+b,0);
+  const w=[]; Object.entries(sl).forEach(([k,v])=>{ if(v>0.001) w.push([k,eq*v/tot]); });
+  if(rf>0) w.push(['rentafija',rf]); if(oro>0) w.push(['GLD',oro]);
+  w.sort((a,b)=>b[1]-a[1]);
+  return {score,want,cap,level,capped:want>cap,eq,rf,oro,w,ans,income,chile};
+}
+let PW=[], PROF=null;
+const mean = a => a.reduce((x,y)=>x+y,0)/a.length;
+const sdev = a => { const m=mean(a); return Math.sqrt(a.reduce((x,y)=>x+(y-m)*(y-m),0)/(a.length-1)); };
+function wkMetrics(v){
+  const n=v.length, W=52.18, r=[], rs=[], S=D.nav.SPY;
+  for(let i=1;i<n;i++){ r.push(v[i]/v[i-1]-1); rs.push(S[i]/S[i-1]-1); }
+  const rfw=D.rfw.slice(1), ex=r.map((x,i)=>x-rfw[i]);
+  const yrs=(new Date(D.asof)-new Date(D.start))/31557600000;
+  const cg = y => { const k=Math.round(y*W); return k>=n ? null : Math.pow(v[n-1]/v[n-1-k],1/y)-1; };
+  let peak=v[0], maxdd=0; const dd=v.map(x=>{ peak=Math.max(peak,x); const d=x/peak-1; maxdd=Math.min(maxdd,d); return +d.toFixed(4); });
+  const mr=mean(r), ms=mean(rs), mf=mean(rfw);
+  let cov=0, vs=0; r.forEach((x,i)=>{ cov+=(x-mr)*(rs[i]-ms); vs+=(rs[i]-ms)*(rs[i]-ms); });
+  const beta=cov/vs, neg=r.filter(x=>x<0);
+  const up=r.filter((x,i)=>rs[i]>0), dn=r.filter((x,i)=>rs[i]<0), su=rs.filter(x=>x>0), sn=rs.filter(x=>x<0);
+  const at = d => { let j=0; for(let i=0;i<n;i++){ if(D.dates[i]<=d) j=i; else break; } return v[j]; };
+  const y0=+D.start.slice(0,4), y1=+D.asof.slice(0,4), cal={};
+  for(let y=y0+1;y<=y1;y++) cal[y<y1?String(y):`${y} YTD`]=at(`${y}-12-31`)/at(`${y-1}-12-31`)-1;
+  const cv=Object.values(cal);
+  return {m:{cagr10:Math.pow(v[n-1]/v[0],1/yrs)-1,cagr5:cg(5),cagr3:cg(3),r1:cg(1),ytd:cv[cv.length-1],vol:sdev(r)*Math.sqrt(W),
+    sharpe:mean(ex)/sdev(ex)*Math.sqrt(W),sortino:mean(ex)*W/(sdev(neg)*Math.sqrt(W)),maxdd,beta,alpha:((mr-mf)-beta*(ms-mf))*W,
+    upcap:mean(up)/mean(su),dncap:mean(dn)/mean(sn),final:v[n-1],calendar:cal}, dd};
+}
+function wkEpisode(v,a,b){
+  let peak=-1, pv=0, tr=-1, worst=0;
+  for(let i=0;i<v.length;i++){ const d=D.dates[i]; if(d<a||d>b) continue; if(v[i]>pv){ pv=v[i]; peak=i; } const x=v[i]/pv-1; if(x<worst){ worst=x; tr=i; var pk=pv; } }
+  if(tr<0) return {drop:0,rec_months:0};
+  let rec=null; for(let j=tr;j<v.length;j++){ if(v[j]>=pk){ rec=(new Date(D.dates[j])-new Date(D.dates[tr]))/86400000/30.44; break; } }
+  return {drop:worst,rec_months:rec};
+}
+function buildPortfolio(){
+  PROF=profile(); PW=PROF.w;
+  const n=D.dates.length, v=[10000];
+  for(let i=1;i<n;i++){ let r=0; PW.forEach(([k,x])=>{ r+=x*(D.nav[k][i]/D.nav[k][i-1]-1); }); v.push(v[i-1]*(1+r)); }
+  const {m,dd}=wkMetrics(v);
+  D.nav.portafolio=v; D.dd.portafolio=dd; M.portafolio=m;
+  const vc=v.map((x,i)=>x*D.fxw[i]/D.fxw[0]); D.crisis.data.portafolio={};
+  D.crisis.episodes.forEach(e=>{ D.crisis.data.portafolio[e.key]={usd:wkEpisode(v,e.a,e.b),clp:wkEpisode(vc,e.a,e.b)}; });
+  D.holdings.portafolio=PW.map(([k,x])=>({t:k==='GLD'?'ORO':FUNDS[k].short.toUpperCase(),w:x,name:blockName(k),sector:CLASSOF[k]}));
+  const sec={}; PW.forEach(([k,x])=>{ sec[CLASSOF[k]]=(sec[CLASSOF[k]]||0)+x; });
+  const wa = key => { let a=0,t=0; PW.forEach(([k,x])=>{ const c=D.chars[k]; if(c&&c[key]!=null){ a+=c[key]*x; t+=x; } }); return t?a/t:null; };
+  D.chars.portafolio={fpe:wa('fpe'),roe:wa('roe'),margin:wa('margin'),dy:wa('dy'),beta:m.beta,n:PW.length,sectors:sec,turnover:wa('turnover')};
+  const L=PROF.level, f=FUNDS.portafolio, mb=MAINB[L];
+  f.name = C.nombre ? `Portafolio de ${C.nombre}` : 'Tu portafolio';
+  f.level=LEVELS[L]; f.risk=RISK[L]; f.main=mb; f.comps=[mb,'VWELX','SPY'];
+  f.tag=`Perfil ${LEVELS[L].toLowerCase()}: ${Math.round(PROF.eq*100)}% acciones, ${Math.round(PROF.rf*100)}% renta fija y ${Math.round(PROF.oro*100)}% oro`;
+  f.horizon = ['1 año o más','2 años o más','4 años o más','6 años o más','10 años o más'][L];
+  f.who = ['Quien prioriza no perder: la mayor parte va a bonos del Tesoro y oro.','Quien quiere crecer de a poco sin grandes sobresaltos.','Quien busca equilibrio entre crecer y proteger.','Quien tiene tiempo por delante y tolera caídas a cambio de más crecimiento.','Quien invierte a muy largo plazo y acepta caídas fuertes.'][L];
+  f.whonot = L<=1 ? 'Quien busca el máximo crecimiento a largo plazo.' : 'Quien podría necesitar la plata antes del plazo o vendería en una caída fuerte.';
+}
+function refreshAll(){
+  readClient(); buildPortfolio(); renderReco(); renderPickers(); renderProp(); renderResp(); renderCierre();
+  if(document.getElementById('v-respaldo').classList.contains('on')) drawCharts();
 }
 function renderQuiz(){
-  document.getElementById('quiz').innerHTML = '<h2 style="margin-bottom:12px">Perfil del inversionista</h2>' + QUIZ.map((x,i)=>`
+  document.getElementById('quiz').innerHTML = '<h2 style="margin-bottom:12px">Tu perfil</h2>' + QUIZ.map((x,i)=>`
     <fieldset class="q"><legend>${i+1}. ${esc(x.q)}</legend><div class="opts">
     ${x.o.map((o,j)=>`<label><input type="radio" name="q${i}" id="q${i}-${j}" value="${j}" ${DEFAULT_ANS[i]===j?'checked':''}><span>${esc(o[0])}</span></label>`).join('')}
     </div></fieldset>`).join('');
-  document.getElementById('quiz').addEventListener('change', ()=>{ renderReco(); renderCierre(); });
+  document.getElementById('quiz').addEventListener('change', refreshAll);
 }
 function renderReco(){
-  const {sc,max,ord} = profile();
-  const top = ord[0], f = FUNDS[top], m = M[top], second = ord[1];
-  const el = document.getElementById('reco');
-  el.style.setProperty('--fc', `var(${f.color})`);
+  const p=PROF, f=FUNDS.portafolio, m=M.portafolio, el=document.getElementById('reco');
   el.innerHTML = `
-    <div class="eyebrow">Fondo sugerido${C.nombre?` para ${esc(C.nombre)}`:''}</div>
-    <h2 style="display:flex;gap:10px;align-items:center"><span class="dot" style="width:12px;height:12px"></span>${esc(f.name)}</h2>
-    <p>${esc(f.tag)}.</p>
+    <div class="eyebrow">Tu resultado</div>
+    <h2>Perfil ${esc(f.level.toLowerCase())}</h2>
+    <div class="meter" role="img" aria-label="Nivel de riesgo ${p.level+1} de 5">${LEVELS.map((x,i)=>`<i class="${i<=p.level?'on':''}"></i>`).join('')}</div>
+    <p class="small muted">${LEVELS.map((x,i)=>i===p.level?`<b style="color:var(--ink)">${x}</b>`:x).join(' · ')}</p>
+    ${p.capped?`<p class="small">Por tus respuestas podrías tomar más riesgo, pero con un plazo de ${C.plazo} ${C.plazo===1?'año':'años'} conviene un perfil más cuidadoso.</p>`:''}
+    <h3 style="margin-top:6px">Tu portafolio</h3>
     <div class="grid" style="gap:6px">
-      ${ord.map(k=>`<div style="display:grid;grid-template-columns:150px 1fr 40px;gap:10px;align-items:center;font-size:13px;--fc:var(${FUNDS[k].color})">
-        <span>${esc(FUNDS[k].short)}</span><div class="fitbar"><i style="width:${Math.round(sc[k]/max*100)}%"></i></div><span class="num muted">${Math.round(sc[k]/max*100)}%</span></div>`).join('')}
+      ${PW.map(([k,x])=>`<div style="display:grid;grid-template-columns:minmax(120px,170px) 1fr 40px;gap:10px;align-items:center;font-size:13px">
+        <span>${esc(blockName(k))}</span><div class="fitbar"><i style="width:${Math.round(x/PW[0][1]*100)}%"></i></div><span class="num muted">${Math.round(x*100)}%</span></div>`).join('')}
     </div>
     <div class="stats s3">
       <div class="stat"><span class="k">Rent. anual 10 años</span><span class="v">${pct(m.cagr10)}</span></div>
       <div class="stat"><span class="k">Peor caída</span><span class="v neg">${pct(m.maxdd)}</span></div>
       <div class="stat"><span class="k">Riesgo</span><span class="v" style="font-size:17px">${f.risk}</span></div>
     </div>
-    <p class="small muted"><b>Para quién es:</b> ${esc(f.who)}</p>
-    <p class="small muted">Segunda opción a conversar: <b>${esc(FUNDS[second].name)}</b>.</p>
-    <a class="btn" href="#propuesta" data-f="${top}">Ver la propuesta de ${esc(f.short)} →</a>`;
-  el.querySelector('a').addEventListener('click',()=>setFund(top));
+    <p class="small muted">${esc(f.who)}</p>
+    <a class="btn" href="#propuesta">Ver mi portafolio →</a>`;
+  el.querySelector('a').addEventListener('click',()=>setFund('portafolio'));
 }
 
 /* ---------- pickers ---------- */
 function renderPickers(){
-  ['pick-prop','pick-resp','pick-cierre'].forEach(id=>{
+  ['pick-prop','pick-resp','pick-cierre'].forEach(id=>{ const FKs=PK;
     const el=document.getElementById(id);
-    el.innerHTML = FK.map(k=>`<button style="--fc:var(${FUNDS[k].color})" data-f="${k}" aria-pressed="${k===state.fund}"><span class="dot"></span>${esc(FUNDS[k].name)}</button>`).join('');
+    el.innerHTML = FKs.map(k=>`<button style="--fc:var(${FUNDS[k].color})" data-f="${k}" aria-pressed="${k===state.fund}"><span class="dot"></span>${esc(FUNDS[k].name)}</button>`).join('');
     el.querySelectorAll('button').forEach(b=>b.addEventListener('click',()=>setFund(b.dataset.f)));
   });
 }
@@ -512,18 +633,18 @@ function argsFor(k){
   per.filter(p=>m[p[1]]<=c[p[1]]).forEach(p=>cons.push(`A ${p[0]}, ${f.main} rindió más: ${pct(c[p[1]])} vs ${pct(m[p[1]])} anual.`));
   if(m.cagr10>s.cagr10) out.push(`En 10 años superó al S&P 500 por ${pp(m.cagr10-s.cagr10)} al año: USD 10.000 se convirtieron en ${usd(m.final)} vs ${usd(s.final)}.`);
   if(m.maxdd>s.maxdd+0.02) out.push(`Su peor caída fue ${pct(m.maxdd)}, contra ${pct(s.maxdd)} del S&P 500.`);
-  if(m.beta<0.85) out.push(`Beta de ${num(m.beta)}: cuando el mercado cae 10%, este fondo tiende a caer cerca de ${Math.round(m.beta*10)}%.`);
+  if(m.beta<0.85) out.push(`Beta de ${num(m.beta)}: cuando el mercado cae 10%, tiende a caer cerca de ${Math.round(m.beta*10)}%.`);
   if(m.sharpe>c.sharpe) out.push(`Mejor retorno por unidad de riesgo que ${f.main}: Sharpe ${num(m.sharpe)} vs ${num(c.sharpe)}.`);
   if(m.alpha>0.005) out.push(`Alfa de ${pct(m.alpha,1,true)} anual: retorno que no se explica solo por exposición al mercado.`);
   if(k==='dividendos') out.push(`Dividend yield actual de la cartera: ${pct(D.chars[k].dy,1)}.`);
-  if(m.cagr10<=s.cagr10) cons.push(`No busca ganarle al S&P 500 en 10 años (${pct(m.cagr10)} vs ${pct(s.cagr10)}): su objetivo es ${k==='balanceado'?'reducir las caídas':'otro perfil de riesgo'}.`);
+  if(m.cagr10<=s.cagr10) cons.push(`No busca ganarle al S&P 500 en 10 años (${pct(m.cagr10)} vs ${pct(s.cagr10)}): ${k==='portafolio'||k==='rentafija'?'su objetivo es reducir las caídas':'tiene otro perfil de riesgo'}.`);
   return {out,cons};
 }
 function objections(k){
   const f=FUNDS[k], m=M[k], c=M[f.main], s=M.SPY;
   const common = [['¿Por qué no compro un ETF del S&P 500 y listo?',
     k==='crecimiento' ? `Es una buena base. La diferencia: en 10 años este fondo rindió ${pct(m.cagr10)} anual vs ${pct(s.cagr10)} del S&P 500, con una caída máxima similar (${pct(m.maxdd)} vs ${pct(s.maxdd)}).`
-    : `Depende de tu objetivo. El S&P 500 rindió ${pct(s.cagr10)} anual, pero cayó ${pct(s.maxdd)} en su peor momento. Este fondo cayó ${pct(m.maxdd)} y tiene beta ${num(m.beta)}: está hecho para quien no quiere vivir esas caídas completas.`]];
+    : `Depende de tu objetivo. El S&P 500 rindió ${pct(s.cagr10)} anual y cayó ${pct(s.maxdd)} en su peor momento. ${esc(f.name)} rindió ${pct(m.cagr10)}, cayó ${pct(m.maxdd)} y tiene beta ${num(m.beta)}: cumple otro rol.`]];
   const topSec = Object.entries(D.chars[k].sectors).sort((a,b)=>b[1]-a[1]).slice(0,3).map(x=>x[0].toLowerCase()).join(', ');
   const cmp = (key,lab) => `a ${lab}, ${pct(m[key])} vs ${pct(c[key])}`;
   const per = {
@@ -533,8 +654,14 @@ function objections(k){
                 ['¿Los dividendos no son solo para jubilados?',`Un dividendo que crece es una señal de empresa sana. Reinvertido, explica buena parte del retorno total de largo plazo.`]],
     defensivo:[['Si cae menos, ¿también sube menos?',`Sí, y es parte del diseño: captura ${pct(m.upcap,0)} de las subidas del S&P 500 y ${pct(m.dncap,0)} de las bajadas. Rinde menos en mercados eufóricos y protege en las caídas.`],
                [`¿En qué se diferencia de ${f.main}?`,`En 10 años: ${pct(m.cagr10)} vs ${pct(c.cagr10)} anual, con beta ${num(m.beta)} vs ${num(c.beta)}. El otro ETF de baja volatilidad, SPLV, rindió ${pct(M.SPLV.cagr10)}.`]],
-    balanceado:[['¿Por qué oro y bonos?',`Porque se mueven distinto a las acciones. En 10 años la peor caída fue ${pct(m.maxdd)}, contra ${pct(s.maxdd)} del S&P 500 y ${pct(c.maxdd)} del Vanguard Wellington.`],
-                ['¿Y frente al Vanguard Wellington?',`Wellington rindió ${pct(c.cagr10)} y este fondo ${pct(m.cagr10)} anual; volatilidad ${pct(c.vol)} vs ${pct(m.vol)}; caída máxima ${pct(c.maxdd)} vs ${pct(m.maxdd)}. Para un cliente que vendería en pánico, la menor caída pesa más que el punto de retorno.`]],
+    chile:[['¿Por qué rindió tan poco en 10 años?',`La bolsa chilena tuvo una década difícil: su peor año fue ${pct(Math.min(...Object.values(m.calendar)))}. El fondo rindió ${pct(m.cagr10)} anual en dólares frente a ${pct(c.cagr10)} del ETF de Chile (ECH). En los últimos 5 años: ${pct(m.cagr5)} anual.`],
+           ['¿Conviene tener todo en Chile?',`No. Chile pesa muy poco en el mercado mundial y es un mercado concentrado. Por eso va como una parte del portafolio y no como la base.`]],
+    global:[['¿En qué se diferencia de un ETF mundial?',`Se parece: en 10 años rindió ${pct(m.cagr10)} anual vs ${pct(c.cagr10)} de VT. La diferencia es que reparte el peso según la estabilidad de cada bloque y no según su tamaño.`],
+            ['¿Por qué invertir fuera de EE.UU.?',`Porque nadie sabe qué región va a liderar la próxima década. Diversificar reduce la dependencia de un solo mercado.`]],
+    rentafija:[['Si rindió tan poco, ¿para qué tenerlo?',`Porque su rol es amortiguar: su peor caída fue ${pct(m.maxdd)}, contra ${pct(s.maxdd)} del S&P 500. Además, hoy los bonos del Tesoro pagan cerca de ${pct(D.exp_rf+D.fees.rentafija)} anual, bastante más que en la última década.`],
+               ['¿Por qué no solo depósito a plazo?',`El depósito a plazo es en pesos y a plazos cortos. Los bonos del Tesoro agregan diversificación en dólares y a plazos más largos.`]],
+    portafolio:[['¿Por qué no poner todo en el fondo que más rindió?',`Porque el que más rindió también es el que más cae. Este portafolio tuvo una caída máxima de ${pct(m.maxdd)}; MM Tendencia, de ${pct(M.crecimiento.maxdd)}.`],
+                ['¿Cada cuánto se ajusta?',`Los pesos vuelven a su objetivo cada trimestre y la selección de acciones de cada fondo se revisa una vez al año. Si cambia tu situación, se rehace el perfil.`]],
   };
   return common.concat(per[k]);
 }
@@ -551,7 +678,7 @@ function renderProp(){
       <p class="lead" style="margin:0">${esc(f.tag)}.</p>
       <div class="facts">
         <span class="chip">Riesgo: ${f.risk}</span><span class="chip">Horizonte: ${f.horizon}</span>
-        <span class="chip">Comisión: ${pct(D.fee,2)} anual</span><span class="chip">Comparable: ${f.main}</span><span class="chip">${ch.n} posiciones</span>
+        <span class="chip">Comisión: ${pct(feeOf(k),2)} anual</span><span class="chip">Comparable: ${f.main}</span><span class="chip">${ch.n} ${k==='portafolio'?'bloques':'posiciones'}</span>
       </div>
     </div>
   </div>
@@ -561,22 +688,32 @@ function renderProp(){
     <div class="stat"><span class="k">Rent. anual 3a</span><span class="v">${pct(m.cagr3)}</span><span class="d ${m.cagr3>=M[f.main].cagr3?'pos':'neg'}">${pp(m.cagr3-M[f.main].cagr3)} vs ${f.main}</span></div>
     <div class="stat"><span class="k">Últimos 12 meses</span><span class="v">${pct(m.r1)}</span><span class="d muted">S&amp;P 500: ${pct(M.SPY.r1)}</span></div>
     <div class="stat"><span class="k">Volatilidad</span><span class="v">${pct(m.vol)}</span><span class="d muted">S&amp;P 500: ${pct(M.SPY.vol)}</span></div>
-    <div class="stat"><span class="k">Sharpe</span><span class="v">${num(m.sharpe)}</span><span class="d muted">S&amp;P 500: ${num(M.SPY.sharpe)}</span></div>
+    <div class="stat exec"><span class="k">Sharpe</span><span class="v">${num(m.sharpe)}</span><span class="d muted">S&amp;P 500: ${num(M.SPY.sharpe)}</span></div>
     <div class="stat"><span class="k">Peor caída</span><span class="v neg">${pct(m.maxdd)}</span><span class="d muted">S&amp;P 500: ${pct(M.SPY.maxdd)}</span></div>
   </div>
 
   <div class="grid g2">
+    <div class="card" id="antes" style="display:grid;gap:14px"></div>
+    <div class="card" style="display:grid;gap:10px">
+      <h2>Dónde podrías estar en ${C.plazo} ${C.plazo===1?'año':'años'}</h2>
+      <p class="small muted">La zona azul es el rango probable (8 de cada 10 casos). No es una promesa: es una estimación, y el resultado puede quedar fuera del rango.</p>
+      <div class="chart-box sm"><canvas id="c-fan" aria-label="Rango probable de resultados"></canvas></div>
+      <p class="xs muted" id="fan-note"></p>
+    </div>
+  </div>
+
+  <div class="grid g2">
     <div class="card" style="display:grid;gap:12px">
-      <h2>Por qué este fondo</h2>
+      <h2>${k==='portafolio'?'Por qué este portafolio':'Por qué este fondo'}</h2>
       <ul class="args">${out.map(x=>`<li><span>${x}</span></li>`).join('')}</ul>
-      ${cons.length?`<h3 style="margin-top:6px">Lo que conviene decir de frente</h3><ul class="args neg">${cons.map(x=>`<li><span>${x}</span></li>`).join('')}</ul>`:''}
+      ${cons.length?`<div class="exec" style="display:grid;gap:10px"><h3 style="margin-top:6px">Lo que conviene decir de frente</h3><ul class="args minus">${cons.map(x=>`<li><span>${x}</span></li>`).join('')}</ul></div>`:''}
     </div>
     <div class="card" style="display:grid;gap:12px">
       <h2>Para quién es</h2>
       <p><b>Sí:</b> ${esc(f.who)}</p>
       <p class="muted"><b>No:</b> ${esc(f.whonot)}</p>
-      <h3 style="margin-top:6px">Preguntas que va a hacer el cliente</h3>
-      <div>${objections(k).map(([q,a])=>`<details><summary>${esc(q)}</summary><p>${a}</p></details>`).join('')}</div>
+      <div class="exec" style="display:grid;gap:8px"><h3 style="margin-top:6px">Preguntas que va a hacer el cliente</h3>
+      <div>${objections(k).map(([q,a])=>`<details><summary>${esc(q)}</summary><p>${a}</p></details>`).join('')}</div></div>
     </div>
   </div>
 
@@ -584,33 +721,35 @@ function renderProp(){
     <div class="card" style="display:grid;gap:12px">
       <div class="section-head"><h2>Cartera vigente</h2><span class="xs muted">Selección del ${fdate(D.hold_date)}</span></div>
       <div class="tbl-wrap" style="border:0"><table>
-        <thead><tr><th>Activo</th><th>Sector</th><th class="n">Peso</th></tr></thead>
-        <tbody>${h.map(x=>`<tr><td><b>${x.t}</b> <span class="muted">${esc(x.name)}</span></td><td>${esc(x.sector)}</td><td class="n"><span class="bar" style="width:${Math.round(x.w*220)}px"></span>${pct(x.w,1)}</td></tr>`).join('')}</tbody>
+        <thead><tr><th>Activo</th><th>${k==='portafolio'?'Clase':'Sector'}</th><th class="n">Peso</th></tr></thead>
+        <tbody>${h.map(x=>`<tr><td style="white-space:normal"><b>${x.t}</b> <span class="muted">${esc(x.name)}</span></td><td>${esc(x.sector)}</td><td class="n"><span class="bar" style="width:${Math.round(Math.min(1,x.w/h[0].w)*46)}px"></span>${pct(x.w,1)}</td></tr>`).join('')}</tbody>
       </table></div>
     </div>
     <div style="display:grid;gap:16px;align-content:start">
       <div class="card" style="display:grid;gap:12px">
         <h2>Características de la cartera</h2>
-        <div class="stats s3">
-          <div class="stat"><span class="k">P/U proyectado</span><span class="v">${num(ch.fpe,1)}x</span></div>
+        <div class="stats s3 exec">
+          <div class="stat"><span class="k">P/U proyectado</span><span class="v">${ch.fpe==null?'–':num(ch.fpe,1)+'x'}</span></div>
           <div class="stat"><span class="k">ROE</span><span class="v">${pct(ch.roe,0)}</span></div>
           <div class="stat"><span class="k">Margen neto</span><span class="v">${pct(ch.margin,0)}</span></div>
           <div class="stat"><span class="k">Dividend yield</span><span class="v">${pct(ch.dy,1)}</span></div>
           <div class="stat"><span class="k">Beta</span><span class="v">${num(ch.beta)}</span></div>
           <div class="stat"><span class="k">Rotación anual</span><span class="v">${pct(ch.turnover,0)}</span></div>
         </div>
-        <p class="xs muted">Promedios ponderados de las acciones de la cartera. ${k==='balanceado'?'El yield incluye un 4% estimado para los bonos del Tesoro.':''}</p>
-        <h3>Por sector</h3>
+        <p class="xs muted exec">Promedios ponderados de las acciones de la cartera; los ETF y bonos no tienen estos ratios.</p>
+        <h3>${k==='portafolio'?'Por clase de activo':'Por sector'}</h3>
         <div class="sectors">${secs.map(([s,w])=>`<div class="sec-row"><span>${esc(s)}</span><div class="track"><i style="width:${Math.round(w/secs[0][1]*100)}%"></i></div><span class="num muted" style="text-align:right">${pct(w,0)}</span></div>`).join('')}</div>
       </div>
       <div class="card" id="wait" style="display:grid;gap:12px"></div>
     </div>
   </div>
   <div class="card" id="crisis" style="display:grid;gap:12px"></div>`;
-  renderWait(); renderCrisis();
+  renderWait(); renderCrisis(); renderAntes(); drawFan('c-fan');
 }
 function fv(ini,mes,yrs,r){ const rm=Math.pow(1+r,1/12)-1, n=Math.round(yrs*12); let v=ini; for(let i=0;i<n;i++){ v=v*(1+rm)+mes; } return v; }
-const st = k => ({exp:M[k].cagr10*(1-C.hair), hist:M[k].cagr10, vol:M[k].vol, maxdd:M[k].maxdd});
+function expRet(k){ if(k==='rentafija') return D.exp_rf; if(k==='portafolio') return PW.reduce((a,[b,w])=>a+w*expRet(b),0); return M[k].cagr10*(1-C.hair); }
+const st = k => ({exp:expRet(k), hist:M[k].cagr10, vol:M[k].vol, maxdd:M[k].maxdd});
+const expNote = () => `historia de las acciones y el oro con ${pct(C.hair,0)} de descuento de prudencia, y tasa actual de los bonos del Tesoro`;
 const loRate = (x,n) => x.exp - 1.28*x.vol/Math.sqrt(n);
 const hiRate = (x,n) => x.exp + 1.28*x.vol/Math.sqrt(n);
 function pmt(meta,ini,yrs,r){ const rm=Math.pow(1+r,1/12)-1, N=Math.round(yrs*12); if(Math.abs(rm)<1e-9) return Math.max(0,(meta-ini)/N); const g=Math.pow(1+rm,N); return Math.max(0,(meta-ini*g)*rm/(g-1)); }
@@ -619,20 +758,79 @@ function waitCalc(x){
   const wait = n>1 ? fv(fv(C.monto,C.aporte,1,C.dap),C.aporte,n-1,x.exp) : dap;
   return {now,dap,wait,cost:now-wait,lo:fv(C.monto,C.aporte,n,loRate(x,n)),hi:fv(C.monto,C.aporte,n,hiRate(x,n)),put:C.monto+C.aporte*12*n,real:C.monto/Math.pow(1+C.ipc,n)};
 }
+function hoyFV(t){ return C.cc + fv(C.dapAmt,C.aporte,t,C.dap) + C.otras*Math.pow(1+C.rOtras,t); }
+function fanData(k){
+  const x=st(k), n=C.plazo, lab=[], lo=[], mid=[], hi=[], hoy=[];
+  for(let t=0;t<=n;t++){
+    lab.push(t===0?'Hoy':`${t} ${t===1?'año':'años'}`);
+    mid.push(fv(C.monto,C.aporte,t,x.exp)); hoy.push(hoyFV(t));
+    lo.push(t?fv(C.monto,C.aporte,t,loRate(x,t)):C.monto); hi.push(t?fv(C.monto,C.aporte,t,hiRate(x,t)):C.monto);
+  }
+  return {lab,lo,mid,hi,hoy};
+}
+function drawFan(id){
+  const cv=document.getElementById(id); if(!cv||typeof Chart==='undefined') return;
+  const d=fanData(state.fund), ac=css('--accent'), grid=css('--line');
+  Chart.defaults.font.family=css('--body'); Chart.defaults.color=css('--muted');
+  charts[id] && charts[id].destroy();
+  charts[id]=new Chart(cv,{type:'line',data:{labels:d.lab,datasets:[
+    {label:'Rango alto',data:d.hi,borderColor:'transparent',pointRadius:0,fill:false},
+    {label:'Rango bajo',data:d.lo,borderColor:'transparent',backgroundColor:ac+'26',pointRadius:0,fill:'-1'},
+    {label:'Escenario central',data:d.mid,borderColor:ac,borderWidth:2.4,pointRadius:0},
+    {label:'Como está hoy',data:d.hoy,borderColor:css('--b2'),borderWidth:1.6,borderDash:[5,4],pointRadius:0}]},
+    options:{responsive:true,maintainAspectRatio:false,animation:false,interaction:{mode:'index',intersect:false},
+      plugins:{legend:{display:true,position:'bottom',labels:{boxWidth:14,boxHeight:2,filter:i=>i.datasetIndex>=2}},tooltip:{callbacks:{label:c=>`${c.dataset.label}: ${clp(c.parsed.y)}`}}},
+      scales:{x:{grid:{display:false}},y:{grid:{color:grid},ticks:{callback:v=>'$'+(v/1e6).toFixed(0)+' M'}}}}});
+  const n=d.lab.length-1, note=document.getElementById(id==='c-fan'?'fan-note':'fan2-note');
+  if(note) note.textContent=`En ${C.plazo} ${C.plazo===1?'año':'años'}: entre ${clp(d.lo[n])} y ${clp(d.hi[n])}, con ${clp(d.mid[n])} en el escenario central. Dejándolo como está hoy: ${clp(d.hoy[n])}.`;
+}
+const SHADES=['','cc','99','66','44','2e'];
+function stackBar(parts){
+  const tot=parts.reduce((a,p)=>a+p[1],0)||1, ac=css('--accent');
+  return `<div class="stack">${parts.map((p,i)=>`<i style="width:${p[1]/tot*100}%;background:${p[2]||ac+SHADES[Math.min(i,5)]}"></i>`).join('')}</div>
+    <ul>${parts.filter(p=>p[1]>0).map((p,i)=>`<li><i style="background:${p[2]||ac+SHADES[Math.min(parts.indexOf(p),5)]}"></i>${esc(p[0])} · ${Math.round(p[1]/tot*100)}%</li>`).join('')}</ul>`;
+}
+function renderAntes(){
+  const el=document.getElementById('antes'); if(!el) return;
+  const k=state.fund, x=st(k), n=C.plazo, g=css('--b2'), g2=css('--b3'), g3=css('--b4');
+  const hoy=hoyFV(n), prop=fv(C.monto,C.aporte,n,x.exp), lo=fv(C.monto,C.aporte,n,loRate(x,n)), hi=fv(C.monto,C.aporte,n,hiRate(x,n));
+  const inf=Math.pow(1+C.ipc,n), we=worstEp(k);
+  const secs=Object.entries(D.chars[k].sectors).sort((a,b)=>b[1]-a[1]);
+  const propParts = k==='portafolio' ? secs.map(([a,b])=>[a,b]) : [[FUNDS[k].name,1]];
+  const rHoy = C.monto ? (C.cc*0+C.dapAmt*C.dap+C.otras*C.rOtras)/C.monto : 0;
+  el.innerHTML = `
+    <h2>Tu plata hoy y con ${k==='portafolio'?'el portafolio':esc(FUNDS[k].name)}</h2>
+    <div class="ba">
+      <div><h3>Hoy</h3>${stackBar([['Cuenta corriente o vista',C.cc,g3],['Depósito a plazo',C.dapAmt,g],['Otras inversiones',C.otras,g2]])}</div>
+      <div><h3>Propuesta</h3>${stackBar(propParts)}</div>
+    </div>
+    <div class="tbl-wrap"><table class="wrap">
+      <thead><tr><th></th><th class="n">Hoy</th><th class="n">Propuesta</th></tr></thead>
+      <tbody>
+        <tr><td>Rentabilidad anual estimada</td><td class="n">${pct(rHoy)}</td><td class="n"><b>${pct(x.exp)}</b></td></tr>
+        <tr><td>Valor estimado en ${n} ${n===1?'año':'años'}</td><td class="n">${clp(hoy)}</td><td class="n"><b>${clp(prop)}</b></td></tr>
+        <tr><td>Rango probable</td><td class="n">Sin variación</td><td class="n">${clp(lo)}<br>a ${clp(hi)}</td></tr>
+        <tr><td>En plata de hoy, sin inflación</td><td class="n">${clp(hoy/inf)}</td><td class="n"><b>${clp(prop/inf)}</b></td></tr>
+        <tr><td>Peor caída en una crisis</td><td class="n">${C.otras>0?'Según sus otras inversiones':'No cae'}</td><td class="n neg">${pct(we.x.drop)}</td></tr>
+        <tr><td>Costo anual</td><td class="n">Sin comisión</td><td class="n">${pct(feeOf(k),2)}</td></tr>
+      </tbody></table></div>
+    <p class="xs muted">Ambos casos suman ${clp(C.aporte)} al mes; en "Hoy" ese aporte va al depósito a plazo. La cuenta corriente no gana intereses. La propuesta puede caer en el camino; lo de hoy no cae, pero ${rHoy<=C.ipc?'rinde menos que la inflación':'rinde poco sobre la inflación'}.</p>`;
+}
 function renderWait(){
   const el=document.getElementById('wait'); if(!el) return;
   const k=state.fund, w=waitCalc(st(k)), n=C.plazo;
   el.innerHTML = `
     <h2>Cuánto cuesta esperar</h2>
-    <div><div class="hero-num">${clp(Math.max(0,w.cost))}</div>
-    <p class="small muted">es lo que deja de ganar ${esc(who())} en ${n} ${n===1?'año':'años'} si espera un año en depósito a plazo antes de invertir.</p></div>
+    ${w.cost>0 ? `<div><div class="hero-num">${clp(w.cost)}</div>
+    <p class="small muted">es lo que deja de ganar ${esc(who())} en ${n} ${n===1?'año':'años'} si espera un año en depósito a plazo antes de invertir.</p></div>`
+    : `<p>Con este perfil y este plazo, el depósito a plazo rinde parecido o más que el portafolio: esperar no tiene costo. La ventaja del portafolio aquí es la diversificación en dólares, no el retorno.</p>`}
     <div class="scen">
       <div><span class="xs muted">Invierte hoy</span><b>${clp(w.now)}</b></div>
       <div><span class="xs muted">Espera un año</span><b>${clp(w.wait)}</b></div>
       <div><span class="xs muted">Solo depósito a plazo</span><b>${clp(w.dap)}</b></div>
     </div>
     <p class="small">En la cuenta corriente, los ${clp(C.monto)} de hoy comprarán en ${n} ${n===1?'año':'años'} lo que hoy compran <b>${clp(w.real)}</b> (inflación de ${pct(C.ipc)}).</p>
-    <p class="xs muted">Con ${clp(C.monto)} iniciales y ${clp(C.aporte)} al mes (${clp(w.put)} aportados en total). Escenario esperado: ${pct(st(k).exp)} anual (rentabilidad histórica de ${pct(st(k).hist)} con ${pct(C.hair,0)} de descuento de prudencia). En un escenario desfavorable (1 de cada 10) el fondo llegaría a ${clp(w.lo)}; el depósito a plazo paga ${pct(C.dap)} pero no cae. <a href="#diagnostico">Cambiar datos</a></p>`;
+    <p class="xs muted">Con ${clp(C.monto)} iniciales y ${clp(C.aporte)} al mes (${clp(w.put)} aportados en total). Escenario esperado: ${pct(st(k).exp)} anual (${expNote()}). En un escenario desfavorable (1 de cada 10) el fondo llegaría a ${clp(w.lo)}; el depósito a plazo paga ${pct(C.dap)} pero no cae. <a href="#diagnostico">Cambiar datos</a></p>`;
 }
 const recTxt = m => m==null ? 'aún no recupera' : m<1 ? 'menos de 1 mes' : `${String(Math.round(m))} ${Math.round(m)===1?'mes':'meses'}`;
 function worstEp(k){ let w=null; D.crisis.episodes.forEach(e=>{ const x=D.crisis.data[k][e.key].clp; if(!w||x.drop<w.x.drop) w={e,x}; }); return w; }
@@ -650,24 +848,47 @@ function renderCrisis(){
 }
 
 /* ---------- 4. cierre ---------- */
-function mixW(){ const p=profile(); const ks=p.ord.filter(k=>p.sc[k]>0).slice(0,3); const base=[0.6,0.25,0.15].slice(0,ks.length); const t=base.reduce((a,b)=>a+b,0); return ks.map((k,i)=>[k,base[i]/t]); }
-function mixStats(w){
-  const n=D.dates.length, rs=[]; let v=1, peak=1, dd=0;
-  for(let i=1;i<n;i++){ let r=0; w.forEach(([k,x])=>{ r+=x*(D.nav[k][i]/D.nav[k][i-1]-1); }); rs.push(r); v*=1+r; peak=Math.max(peak,v); dd=Math.min(dd,v/peak-1); }
-  const yrs=(new Date(D.asof)-new Date(D.start))/31557600000, mean=rs.reduce((a,b)=>a+b,0)/rs.length;
-  return {exp:Math.pow(v,1/yrs)-1, vol:Math.sqrt(rs.reduce((a,b)=>a+(b-mean)*(b-mean),0)/(rs.length-1))*Math.sqrt(52.18), maxdd:dd};
-}
+
 let sheetText='';
+function fallPlan(k){
+  const dd=D.dd[k], t2=Math.max(4,Math.round(-M[k].maxdd*100)), t1=Math.max(2,Math.round(t2/2));
+  let n=0; for(let i=1;i<dd.length;i++){ if(dd[i]<=-t1/100 && dd[i-1]>-t1/100) n++; }
+  const recs=D.crisis.episodes.map(e=>D.crisis.data[k][e.key].usd.rec_months);
+  return {t1,t2,n,rec:recs.some(x=>x==null)?null:Math.max(...recs)};
+}
+function renderReg(){
+  const el=document.getElementById('reg'); if(!el) return;
+  const p=PROF, now=new Date(), f=FUNDS[state.fund];
+  const stamp=now.toLocaleString('es-CL',{day:'numeric',month:'long',year:'numeric',hour:'2-digit',minute:'2-digit'});
+  let h=5381; const raw=JSON.stringify([C.nombre,p.ans,C.plazo,C.monto,now.toISOString().slice(0,16)]); for(let i=0;i<raw.length;i++) h=((h<<5)+h+raw.charCodeAt(i))>>>0;
+  el.innerHTML=`
+    <div class="head"><div><div class="xs muted">Registro del perfil del inversionista</div><h1>${esc(C.nombre||'Cliente')}</h1></div>
+      <div class="small muted" style="text-align:right">MM Capital (proyecto demostrativo)<br>${stamp}<br>Código ${h.toString(16).toUpperCase().padStart(8,'0')}</div></div>
+    <section><h2>Datos declarados</h2>
+      <div class="kv"><div><span>Cuenta corriente o vista</span><b>${clp(C.cc)}</b></div><div><span>Depósito a plazo</span><b>${clp(C.dapAmt)}</b></div><div><span>Otras inversiones</span><b>${clp(C.otras)}</b></div><div><span>Aporte mensual</span><b>${clp(C.aporte)}</b></div><div><span>Plazo</span><b>${C.plazo} ${C.plazo===1?'año':'años'}</b></div></div></section>
+    <section><h2>Respuestas</h2>
+      <div class="tbl-wrap"><table class="wrap"><tbody>${p.ans.map(([q,a],i)=>`<tr><td>${i+1}. ${esc(q)}</td><td><b>${esc(a)}</b></td></tr>`).join('')}</tbody></table></div></section>
+    <section><h2>Resultado</h2>
+      <div class="kv"><div><span>Puntaje de riesgo</span><b>${Math.round(p.score*100)} de 100</b></div><div><span>Perfil según respuestas</span><b>${LEVELS[p.want]}</b></div><div><span>Máximo según plazo</span><b>${LEVELS[p.cap]}</b></div><div><span>Perfil asignado</span><b>${LEVELS[p.level]}</b></div></div>
+      <p class="small" style="margin-top:10px">Se asigna el más cuidadoso entre el perfil que sale de las respuestas y el máximo que permite el plazo.</p></section>
+    <section><h2>Portafolio asignado</h2>
+      <ul>${PW.map(([a,b])=>`<li><b>${Math.round(b*100)}%</b> ${esc(blockName(a))}</li>`).join('')}</ul>
+      ${state.fund!=='portafolio'?`<p class="small" style="margin-top:8px">Producto presentado en la reunión: ${esc(f.name)}.</p>`:''}</section>
+    <section><h2>Declaración</h2>
+      <p class="small">El cliente declara que respondió personalmente estas preguntas, que la información entregada es verdadera y que entiende que el valor de su inversión puede bajar. Este perfil debe revisarse al menos una vez al año o cuando cambie su situación.</p>
+      <div class="sign"><div>Firma del cliente</div><div>Firma del ejecutivo</div></div></section>
+    <p class="xs muted">Documento de un proyecto demostrativo. No constituye un contrato ni un registro regulatorio real.</p>`;
+}
 function renderCierre(){
   const el=document.getElementById('sheet'); if(!el) return;
   const k=state.fund, f=FUNDS[k], m=M[k], x=st(k), n=C.plazo, w=waitCalc(x), p=profile();
   const hoy=new Date().toLocaleDateString('es-CL',{day:'numeric',month:'long',year:'numeric'});
-  const args=argsFor(k).out.slice(0,3), we=worstEp(k), mw=mixW(), ms=mixStats(mw);
-  const mixTxt=mw.map(([a,b])=>`${Math.round(b*100)}% ${FUNDS[a].name}`).join(' + ');
+  const args=argsFor(k).out.slice(0,3), we=worstEp(k), pl=fallPlan(k);
+  const compo = k==='portafolio' ? PW.map(([a,b])=>`<li><b>${Math.round(b*100)}%</b> ${esc(blockName(a))}</li>`).join('') : '';
   const years=`${n} ${n===1?'año':'años'}`;
   let metaHtml='', metaTxt='';
   if(C.meta>0){
-    const need=pmt(C.meta,C.monto,n,x.exp), needLo=pmt(C.meta,C.monto,n,loRate(x,n)), needDap=pmt(C.meta,C.monto,n,C.dap), needMix=pmt(C.meta,C.monto,n,ms.exp*(1-C.hair));
+    const need=pmt(C.meta,C.monto,n,x.exp), needLo=pmt(C.meta,C.monto,n,loRate(x,n)), needDap=pmt(C.meta,C.monto,n,C.dap);
     const gap=w.now-C.meta;
     const verdict = gap>=0 ? `Con el aporte actual de ${clp(C.aporte)} al mes llegaría a ${clp(w.now)}: supera la meta por ${clp(gap)}.` : `Con el aporte actual de ${clp(C.aporte)} al mes llegaría a ${clp(w.now)}: faltan ${clp(-gap)} para la meta.`;
     metaHtml=`<section><h2>Plan para la meta de ${clp(C.meta)} en ${years}</h2>
@@ -675,7 +896,6 @@ function renderCierre(){
       <div class="kv" style="margin-top:10px">
         <div><span>Aporte mensual necesario, escenario esperado</span><b>${clp(need)}</b></div>
         <div><span>Escenario desfavorable</span><b>${clp(needLo)}</b></div>
-        <div><span>Con la mezcla diversificada</span><b>${clp(needMix)}</b></div>
         <div><span>Solo con depósito a plazo</span><b>${clp(needDap)}</b></div>
       </div></section>`;
     metaTxt=`META: ${clp(C.meta)} en ${years}\n${verdict}\nAporte mensual necesario: ${clp(need)} (esperado), ${clp(needLo)} (desfavorable), ${clp(needDap)} (solo depósito a plazo).\n\n`;
@@ -687,28 +907,34 @@ function renderCierre(){
     <section><h2>Perfil</h2>
       <div class="kv"><div><span>Monto inicial</span><b>${clp(C.monto)}</b></div><div><span>Aporte mensual</span><b>${clp(C.aporte)}</b></div><div><span>Plazo</span><b>${years}</b></div>${C.meta>0?`<div><span>Meta</span><b>${clp(C.meta)}</b></div>`:''}</div>
       <ul class="small" style="margin-top:10px">${p.ans.map(([q,a])=>`<li>${esc(q)} <b>${esc(a)}</b></li>`).join('')}</ul></section>
-    <section><h2>Recomendación: ${esc(f.name)}</h2>
+    <section><h2>${k==='portafolio'?'Tu portafolio: perfil '+esc(f.level.toLowerCase()):'Recomendación: '+esc(f.name)}</h2>
       <p>${esc(f.tag)}. ${esc(f.who)}</p>
       <ul style="margin-top:8px">${args.map(a=>`<li>${a}</li>`).join('')}</ul></section>
-    <section><h2>Proyección a ${years}</h2>
-      <div class="scen">
-        <div><span class="xs muted">Desfavorable · ${pct(loRate(x,n))} anual</span><b>${clp(w.lo)}</b></div>
-        <div><span class="xs muted">Esperado · ${pct(x.exp)} anual</span><b>${clp(w.now)}</b></div>
-        <div><span class="xs muted">Favorable · ${pct(hiRate(x,n))} anual</span><b>${clp(w.hi)}</b></div>
-      </div>
-      <p class="small" style="margin-top:8px">Aportes totales: ${clp(w.put)}. El escenario esperado usa la rentabilidad histórica (${pct(x.hist)}) con un descuento de prudencia de ${pct(C.hair,0)}. El mismo plan en depósito a plazo al ${pct(C.dap)}: ${clp(w.dap)}. Esperar un año antes de invertir costaría cerca de ${clp(Math.max(0,w.cost))}.</p></section>
+    <section><h2>Rango probable a ${years}</h2>
+      <div class="chart-box sm"><canvas id="c-fan2" aria-label="Rango probable de resultados"></canvas></div>
+      <p id="fan2-note" style="margin-top:8px"></p>
+      <p class="small muted">La zona azul es el rango probable (8 de cada 10 casos). Es una estimación y no una promesa: el resultado puede quedar fuera del rango.</p>
+      <p class="small" style="margin-top:8px">Aportes totales: ${clp(w.put)}. El escenario central usa ${expNote()}. El mismo plan en depósito a plazo al ${pct(C.dap)}: ${clp(w.dap)}. Esperar un año antes de invertir costaría cerca de ${clp(Math.max(0,w.cost))}.</p></section>
     ${metaHtml}
     <section><h2>Qué esperar en una crisis</h2>
       <p>En el peor episodio de los últimos 10 años (${esc(we.e.name.toLowerCase())}), ${clp(C.monto)} en este fondo habrían bajado a ${clp(C.monto*(1+we.x.drop))} (${pct(we.x.drop)}, medido en pesos) y habrían tardado ${recTxt(we.x.rec_months)} en recuperarse.</p></section>
-    <section><h2>Alternativa diversificada</h2>
-      <p>${esc(mixTxt)}. En 10 años esta mezcla habría rendido ${pct(ms.exp)} anual, con volatilidad de ${pct(ms.vol)} y una caída máxima cercana a ${pct(ms.maxdd,0)} (en dólares).</p></section>
+${compo?`<section><h2>Composición</h2><ul>${compo}</ul></section>`:''}
+    <section><h2>Nuestro plan si el mercado cae</h2>
+      <p>Lo acordamos ahora, con calma, para no decidir en medio de una caída.</p>
+      <ul style="margin-top:8px">
+        <li><b>Si baja hasta ${pl.t1}%:</b> no hacemos nada. Es parte del camino: en los últimos 10 años pasó ${pl.n} ${pl.n===1?'vez':'veces'}.</li>
+        <li><b>Si baja entre ${pl.t1}% y ${pl.t2}%:</b> te llamo. Revisamos si cambió tu situación o tu plazo. Si no cambió, mantenemos el plan y volvemos a los pesos originales.</li>
+        <li><b>Si baja más de ${pl.t2}%:</b> sería más que su peor caída en 10 años. Nos reunimos y revisamos el perfil completo.</li>
+        <li><b>Lo que no hacemos:</b> vender todo en plena caída.${pl.rec!=null?` En los últimos 10 años, las caídas grandes se recuperaron en ${recTxt(pl.rec)} como máximo (en dólares).`:''}</li>
+      </ul></section>
     <section><h2>Riesgos</h2>
-      <ul class="small"><li>El valor de la inversión puede bajar. La peor caída del fondo en 10 años fue ${pct(m.maxdd)} en dólares.</li><li>Las proyecciones se basan en resultados históricos simulados y no son garantía.</li><li>El fondo invierte en dólares: el valor en pesos también depende del tipo de cambio.</li><li>Comisión de administración de ${pct(D.fee,2)} anual, ya descontada en las cifras.</li></ul></section>
+      <ul class="small"><li>El valor de la inversión puede bajar. La peor caída del fondo en 10 años fue ${pct(m.maxdd)} en dólares.</li><li>Las proyecciones se basan en resultados históricos simulados y no son garantía.</li><li>Se invierte en dólares: el valor en pesos también depende del tipo de cambio.</li><li>Comisión de administración de ${pct(feeOf(k),2)} anual, ya descontada en las cifras.</li></ul></section>
     <section><h2>Próximos pasos</h2>
       <ol class="small"><li>Confirmar monto, plazo y perfil de riesgo.</li><li>Firmar el contrato y la declaración de perfil del inversionista.</li><li>Hacer el primer aporte y programar el aporte mensual.</li><li>Agendar la primera revisión de la cartera a los 6 meses.</li></ol></section>
     <p class="xs muted">Documento de un proyecto demostrativo. MM Capital no es una administradora real y esto no es una oferta ni una recomendación de inversión.</p>`;
+  drawFan('c-fan2'); renderReg();
   const strip = h => h.replace(/<[^>]+>/g,'').replace(/&amp;/g,'&');
-  sheetText = `PROPUESTA DE INVERSIÓN · ${C.nombre||'Cliente'}\n${hoy}\n\nFONDO RECOMENDADO: ${f.name}\n${f.tag}.\n\nPLAN: ${clp(C.monto)} iniciales + ${clp(C.aporte)} al mes, por ${years}.\n\nPROYECCIÓN A ${years.toUpperCase()}\n- Desfavorable: ${clp(w.lo)}\n- Esperado: ${clp(w.now)}\n- Favorable: ${clp(w.hi)}\n- El mismo plan en depósito a plazo (${pct(C.dap)}): ${clp(w.dap)}\n- Esperar un año antes de invertir costaría cerca de ${clp(Math.max(0,w.cost))}\n\n${metaTxt}POR QUÉ ESTE FONDO\n${args.map(a=>'- '+strip(a)).join('\n')}\n\nEN UNA CRISIS\nEn el peor episodio de los últimos 10 años, ${clp(C.monto)} habrían bajado a ${clp(C.monto*(1+we.x.drop))} (${pct(we.x.drop)}) y tardado ${recTxt(we.x.rec_months)} en recuperarse.\n\nRIESGOS\nEl valor puede bajar; las proyecciones se basan en resultados históricos simulados y no son garantía; el valor en pesos depende también del dólar.\n\nPRÓXIMOS PASOS\n1. Confirmar monto, plazo y perfil.\n2. Firmar contrato y perfil del inversionista.\n3. Primer aporte y aporte mensual programado.\n4. Revisión a los 6 meses.\n\nProyecto demostrativo: no es una oferta ni una recomendación de inversión.`;
+  sheetText = `PROPUESTA DE INVERSIÓN · ${C.nombre||'Cliente'}\n${hoy}\n\n${k==='portafolio'?'PORTAFOLIO RECOMENDADO':'FONDO RECOMENDADO'}: ${f.name}\n${f.tag}.${k==='portafolio'?'\n'+PW.map(([a,b])=>'- '+Math.round(b*100)+'% '+blockName(a)).join('\n'):''}\n\nPLAN: ${clp(C.monto)} iniciales + ${clp(C.aporte)} al mes, por ${years}.\n\nRANGO PROBABLE A ${years.toUpperCase()} (estimación, no promesa)\n- Entre ${clp(w.lo)} y ${clp(w.hi)}\n- Escenario central: ${clp(w.now)}\n- Dejándolo como está hoy: ${clp(hoyFV(n))}\n- El mismo plan en depósito a plazo (${pct(C.dap)}): ${clp(w.dap)}\n- Esperar un año antes de invertir costaría cerca de ${clp(Math.max(0,w.cost))}\n\n${metaTxt}POR QUÉ ESTA PROPUESTA\n${args.map(a=>'- '+strip(a)).join('\n')}\n\nEN UNA CRISIS\nEn el peor episodio de los últimos 10 años, ${clp(C.monto)} habrían bajado a ${clp(C.monto*(1+we.x.drop))} (${pct(we.x.drop)}) y tardado ${recTxt(we.x.rec_months)} en recuperarse.\n\nPLAN SI EL MERCADO CAE\n- Hasta ${pl.t1}%: no hacemos nada, es parte del camino.\n- Entre ${pl.t1}% y ${pl.t2}%: te llamo y revisamos si cambió tu situación; si no, mantenemos el plan.\n- Más de ${pl.t2}%: nos reunimos y revisamos el perfil.\n- Lo que no hacemos: vender todo en plena caída.\n\nRIESGOS\nEl valor puede bajar; las proyecciones se basan en resultados históricos simulados y no son garantía; el valor en pesos depende también del dólar.\n\nPRÓXIMOS PASOS\n1. Confirmar monto, plazo y perfil.\n2. Firmar contrato y perfil del inversionista.\n3. Primer aporte y aporte mensual programado.\n4. Revisión a los 6 meses.\n\nProyecto demostrativo: no es una oferta ni una recomendación de inversión.`;
 }
 document.getElementById('b-copy').addEventListener('click', async e=>{
   const b=e.currentTarget; let ok=false;
@@ -722,10 +948,12 @@ document.getElementById('b-print').addEventListener('click',()=>{ try{ window.pr
 /* ---------- datos del cliente ---------- */
 function readClient(){
   C.nombre=document.getElementById('c-nombre').value.trim().slice(0,60);
-  C.monto=parseMoney(document.getElementById('c-monto').value);
+  C.cc=parseMoney(document.getElementById('h-cc').value); C.dapAmt=parseMoney(document.getElementById('h-dap').value); C.otras=parseMoney(document.getElementById('h-otras').value);
+  C.monto=C.cc+C.dapAmt+C.otras; document.getElementById('tot-note').textContent=clp(C.monto);
+  C.rOtras=Math.min(.25,Math.max(0,(+document.getElementById('s-otras').value||0)/100));
   C.aporte=parseMoney(document.getElementById('c-aporte').value);
   C.plazo=Math.min(40,Math.max(1,Math.round(+document.getElementById('c-plazo').value||1)));
-  C.meta=parseMoney(document.getElementById('c-meta').value);
+  C.meta=0;
   C.dap=Math.min(.25,Math.max(0,(+document.getElementById('s-dap').value||0)/100));
   C.ipc=Math.min(.25,Math.max(0,(+document.getElementById('s-ipc').value||0)/100));
   C.hair=Math.min(.8,Math.max(0,(+document.getElementById('s-hair').value||0)/100));
@@ -734,8 +962,9 @@ function initClient(){
   document.getElementById('s-dap').value=(D.cl.dap*100).toFixed(1);
   document.getElementById('s-ipc').value=(D.cl.ipc*100).toFixed(1);
   document.getElementById('fx-note').textContent=`Montos en pesos · dólar a $${dots(D.fx)}`;
+  document.getElementById('welcome-note').textContent=`Herramienta para que un ejecutivo de inversiones la use junto a su cliente. Universo: ${D.counts.sp} acciones del S&P 500, ${D.counts.cl} del IPSA, ETF globales, bonos del Tesoro de EE.UU. y oro. Datos al ${fdate(D.asof)}. Proyecto demostrativo.`;
   document.getElementById('sup-note').textContent=`Supuestos editables. Referencias: ${D.cl.dap_src}; ${D.cl.ipc_src}. El descuento de prudencia rebaja la rentabilidad histórica del fondo al proyectar: el pasado simulado no se repite tal cual.`;
-  ['c-nombre','c-monto','c-aporte','c-plazo','c-meta','s-dap','s-ipc','s-hair'].forEach(id=>document.getElementById(id).addEventListener('input',()=>{ readClient(); renderReco(); renderWait(); renderCrisis(); renderCierre(); }));
+  ['c-nombre','h-cc','h-dap','h-otras','c-aporte','c-plazo','s-dap','s-ipc','s-otras','s-hair'].forEach(id=>document.getElementById(id).addEventListener('input',refreshAll));
   document.querySelectorAll('input.money').forEach(i=>i.addEventListener('blur',()=>{ i.value=dots(parseMoney(i.value)); }));
   readClient();
 }
@@ -756,7 +985,7 @@ function renderResp(){
   document.getElementById('t-metrics').innerHTML = `<thead><tr><th>Métrica</th>${ks.map((s,i)=>`<th class="n"><span style="display:inline-flex;gap:6px;align-items:center"><i style="width:10px;height:10px;border-radius:2px;background:${colorOf(s,i)};display:inline-block"></i>${esc(s===k?f.name:s)}</span></th>`).join('')}</tr></thead>
   <tbody>${rows.map(([n,key,fm,dir])=>{
     const vals=ks.map(s=>M[s][key]); const best = dir===0?null:(dir>0?Math.max(...vals):Math.min(...vals));
-    return `<tr><td>${n}</td>${ks.map((s,i)=>`<td class="n${s===k?' ':''}" style="${vals[i]===best?'font-weight:700;color:var(--good)':''}">${fm(vals[i])}</td>`).join('')}</tr>`; }).join('')}</tbody>`;
+    return `<tr${['sharpe','sortino','beta','alpha','upcap','dncap'].includes(key)?' class="exec"':''}><td>${n}</td>${ks.map((s,i)=>`<td class="n${s===k?' ':''}" style="${vals[i]===best?'font-weight:700;color:var(--good)':''}">${fm(vals[i])}</td>`).join('')}</tr>`; }).join('')}</tbody>`;
   const years = Object.keys(m.calendar);
   document.getElementById('t-cal').innerHTML = `<thead><tr><th>Fondo</th>${years.map(y=>`<th class="n">${y}</th>`).join('')}</tr></thead>
    <tbody>${ks.map(s=>`<tr class="${s===k?'hl':''}"><td><b>${esc(s===k?f.name:s)}</b>${s===k?'':` <span class="muted xs">${esc(D.bench[s])}</span>`}</td>${years.map(y=>{const v=M[s].calendar[y]; const best=Math.max(...ks.map(z=>M[z].calendar[y])); return `<td class="n ${v<0?'neg':''}" style="${v===best?'font-weight:700;text-decoration:underline;text-decoration-color:var(--accent)':''}">${pct(v,1)}</td>`;}).join('')}</tr>`).join('')}</tbody>`;
@@ -781,7 +1010,7 @@ function drawCharts(){
   charts.d && charts.d.destroy();
   charts.d = new Chart(document.getElementById('c-dd'),{type:'line',data:{labels:D.dates,datasets:dds},options:opt(v=>Math.round(v*100)+'%')});
   // scatter all
-  const all = FK.concat(Object.keys(D.bench).filter(x=>!['IEF','GLD','^IRX'].includes(x)));
+  const all = PK.concat(Object.keys(D.bench).filter(x=>!['SHY','IEF','TLT','VOO','IVV','VEA','VWO','VTV','AGG','ACWI','VTI'].includes(x)));
   const pts = all.map(s=>({x:M[s].vol*100,y:M[s].cagr10*100,s}));
   charts.s && charts.s.destroy();
   charts.s = new Chart(document.getElementById('c-scatter'),{type:'scatter',
@@ -796,18 +1025,23 @@ document.querySelectorAll('#range button').forEach(b=>b.addEventListener('click'
 
 /* ---------- 4. análisis ---------- */
 function renderRules(){
+  document.getElementById('met-title').textContent = `De ${D.counts.sp + D.counts.cl} acciones y ${Object.keys(D.instr).length} ETF a un portafolio a medida`;
+  document.getElementById('met-lead').textContent = `El universo son ${D.counts.sp} acciones del S&P 500, ${D.counts.cl} acciones chilenas del IPSA, ETF de los más grandes del mundo, bonos del Tesoro de EE.UU. y oro. Cada fondo sale de reglas fijas que solo usan información disponible en cada fecha, y el portafolio de cada cliente combina esos fondos según su perfil.`;
   document.getElementById('rules').innerHTML = FK.map(k=>`<div class="card rule" style="--fc:var(${FUNDS[k].color})"><h3>${esc(FUNDS[k].name)}</h3><ol>${FUNDS[k].rule.map(r=>`<li>${esc(r)}</li>`).join('')}</ol></div>`).join('');
   document.getElementById('limits').innerHTML = [
     `Los resultados de los fondos MM son un backtest: simulan qué habría pasado aplicando las reglas desde ${fdate(D.start)}. No son rentabilidades reales.`,
-    `Se descuenta una comisión de administración de ${pct(D.fee,2)} anual y un costo de transacción de ${pct(D.tc,2)} sobre cada compra y venta. Los fondos de terceros ya vienen netos de sus comisiones.`,
-    `Sesgo de supervivencia: el universo son 64 empresas grandes de hoy. Una empresa que quebró o salió del índice en estos 10 años no está en la lista, lo que puede inflar algo los resultados.`,
-    `Las reglas de selección (momentum, volatilidad y dividendos) usan solo datos de precios y dividendos disponibles en cada fecha. Los fundamentales (P/U, ROE, márgenes) se muestran como foto actual y no se usaron para elegir.`,
+    `Se descuenta una comisión anual por fondo (${pct(D.fees.crecimiento,2)} los de acciones, ${pct(D.fees.global,2)} MM Global, ${pct(D.fees.rentafija,2)} MM Tesoro) y un costo de ${pct(D.tc,2)} sobre cada compra y venta. Los fondos de terceros ya vienen netos de sus comisiones.`,
+    `Sesgo de supervivencia: el universo son las empresas que hoy están en el S&P 500 y en el IPSA. Para reducirlo, cada acción del S&P 500 solo puede ser elegida desde la fecha en que entró al índice. Aun así, las empresas que salieron del índice no están, lo que puede inflar algo los resultados.`,
+    `La lista de acciones del IPSA es fija y puede diferir levemente de la composición oficial vigente, que se revisa varias veces al año.`,
+    `No se incluyen swaps de tasas: son contratos entre instituciones sin precio público. La exposición a tasas de EE.UU. se toma con bonos del Tesoro a tres plazos.`,
+    `Las métricas del portafolio se calculan con datos semanales y las de cada fondo con datos diarios, por lo que puede haber diferencias menores.`,
     `Los fondos y sus comparables se miden en dólares. Las cifras en pesos del cliente usan el tipo de cambio de cada fecha en la prueba de crisis y un dólar constante en las proyecciones.`,
+    `La rentabilidad esperada usa la historia de las acciones y el oro con un descuento de prudencia, y para la renta fija la tasa actual de los bonos del Tesoro (${pct(D.exp_rf)} neta de comisión).`,
     `La página completa se regenera con un solo script (build.py): descarga los datos, recalcula los fondos y reconstruye todas las cifras.`,
   ].map(x=>`<li>${x}</li>`).join('');
 }
 let sortKey='mom', sortDir=-1;
-const SCOLS = [['t','Ticker','s'],['name','Empresa','s'],['sector','Sector','s'],['r1','Rent. 1a','p'],['c5','Anual 5a','p'],['c10','Anual 10a','p'],['mom','Momentum 12‑1','p'],['vol','Volatilidad 1a','p'],['dd','Peor caída 10a','p'],['sharpe','Sharpe 10a','n'],['fpe','P/U proy.','x'],['roe','ROE','p0'],['dy','Div. yield','p'],['dg5','Crec. dividendo 5a','p'],['beta','Beta','n'],['funds','En fondos','f']];
+const SCOLS = [['t','Ticker','s'],['name','Empresa','s'],['mkt','Mercado','s'],['sector','Sector','s'],['r1','Rent. 1a','p'],['c5','Anual 5a','p'],['c10','Anual 10a','p'],['mom','Momentum 12‑1','p'],['vol','Volatilidad 1a','p'],['dd','Peor caída 10a','p'],['sharpe','Sharpe 10a','n'],['dy','Div. yield','p'],['dg5','Crec. dividendo 5a','p'],['funds','En fondos','f']];
 function renderStocks(){
   const sec=document.getElementById('f-sector').value, fu=document.getElementById('f-fund').value, q=document.getElementById('f-q').value.trim().toLowerCase();
   let rows = D.stocks.filter(r=>(!sec||r.sector===sec)&&(!fu||r.funds.includes(fu))&&(!q||r.t.toLowerCase().includes(q)||r.name.toLowerCase().includes(q)));
@@ -817,11 +1051,11 @@ function renderStocks(){
   <tbody>${rows.map(r=>`<tr>${SCOLS.map(([k,n,t])=>{
     if(k==='t') return `<td><b>${r.t}</b></td>`;
     if(k==='name') return `<td>${esc(r.name)}</td>`;
-    if(k==='sector') return `<td class="muted">${esc(r.sector)}</td>`;
+    if(k==='sector'||k==='mkt') return `<td class="muted">${esc(r[k])}</td>`;
     if(k==='funds') return `<td>${r.funds.map(f=>`<span class="chip" style="--fc:var(${FUNDS[f].color})"><span class="dot"></span>${FUNDS[f].short}</span>`).join(' ')}</td>`;
     const v=r[k]; const cls = (t==='p' && ['r1','c5','c10','mom'].includes(k) && v!=null) ? (v<0?'neg':'') : '';
     return `<td class="n ${cls}">${fmt(t,v)}</td>`; }).join('')}</tr>`).join('')}</tbody>`;
-  document.querySelectorAll('#t-stocks th.sort').forEach(th=>th.addEventListener('click',()=>{ const k=th.dataset.k; if(sortKey===k) sortDir*=-1; else {sortKey=k; sortDir=['t','name','sector','vol','fpe','beta'].includes(k)?1:-1;} renderStocks(); }));
+  document.querySelectorAll('#t-stocks th.sort').forEach(th=>th.addEventListener('click',()=>{ const k=th.dataset.k; if(sortKey===k) sortDir*=-1; else {sortKey=k; sortDir=['t','name','sector','mkt','vol'].includes(k)?1:-1;} renderStocks(); }));
 }
 function initFilters(){
   const secs=[...new Set(D.stocks.map(s=>s.sector))].sort();
@@ -830,8 +1064,13 @@ function initFilters(){
   ['f-sector','f-fund','f-q'].forEach(id=>document.getElementById(id).addEventListener('input',renderStocks));
 }
 
+/* ---------- modo ejecutivo / cliente ---------- */
+function setMode(m){ document.body.dataset.mode=m; document.getElementById('b-mode').setAttribute('aria-pressed', m==='ejecutivo'); try{ localStorage.setItem('mm-mode',m); }catch(e){} }
+document.getElementById('b-mode').addEventListener('click',()=>setMode(document.body.dataset.mode==='ejecutivo'?'cliente':'ejecutivo'));
+{ let m='cliente'; try{ if(localStorage.getItem('mm-mode')==='ejecutivo') m='ejecutivo'; }catch(e){} setMode(m); }
+
 /* ---------- init ---------- */
-renderTiles(); renderQuiz(); initClient(); renderReco(); renderPickers(); renderProp(); renderResp(); renderCierre(); renderRules(); initFilters(); renderStocks();
+renderTiles(); renderQuiz(); initClient(); buildPortfolio(); renderReco(); renderPickers(); renderProp(); renderResp(); renderCierre(); renderRules(); initFilters(); renderStocks();
 show(location.hash.slice(1));
 window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change',()=>{ if(document.getElementById('v-respaldo').classList.contains('on')) drawCharts(); });
 new MutationObserver(()=>{ renderTiles(); if(document.getElementById('v-respaldo').classList.contains('on')) drawCharts(); }).observe(document.documentElement,{attributes:true,attributeFilter:['data-theme']});
