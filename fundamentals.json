@@ -1,822 +1,822 @@
 {
  "AFL": {
   "shortName": "AFLAC Incorporated",
-  "trailingPE": 18.213139,
-  "forwardPE": 16.102179,
+  "trailingPE": 18.148905,
+  "forwardPE": 16.04539,
   "returnOnEquity": 0.12165,
   "profitMargins": 0.21240999,
-  "dividendYield": 2.04,
+  "dividendYield": 2.05,
   "beta": 0.548,
-  "currentPrice": 124.76
+  "currentPrice": 124.32
  },
  "AGUAS-A.SN": {
   "shortName": "AGUAS ANDINAS S.A., SERIE A",
-  "trailingPE": 13.936906,
-  "forwardPE": 11.701742,
+  "trailingPE": 13.789975,
+  "forwardPE": 11.578375,
   "returnOnEquity": 0.106639996,
   "profitMargins": 0.19216,
   "dividendYield": 5.27,
   "beta": 0.141,
-  "currentPrice": 322.5
+  "currentPrice": 319.1
  },
  "APA": {
   "shortName": "APA Corporation",
-  "trailingPE": 7.2552843,
-  "forwardPE": 7.6127234,
+  "trailingPE": 7.321951,
+  "forwardPE": 7.6826744,
   "returnOnEquity": 0.33321998,
   "profitMargins": 0.23492001,
-  "dividendYield": 2.2,
+  "dividendYield": 2.24,
   "beta": 0.282,
-  "currentPrice": 44.62
+  "currentPrice": 45.03
  },
  "ARES": {
   "shortName": "Ares Management Corporation",
-  "trailingPE": 101.983604,
-  "forwardPE": 17.826595,
+  "trailingPE": 101.065575,
+  "forwardPE": 17.666124,
   "returnOnEquity": 0.11063,
   "profitMargins": 0.086899996,
-  "dividendYield": 4.22,
+  "dividendYield": 4.34,
   "beta": 1.507,
-  "currentPrice": 124.42
+  "currentPrice": 123.3
  },
  "ATO": {
   "shortName": "Atmos Energy Corporation",
-  "trailingPE": 19.869259,
-  "forwardPE": 17.253054,
+  "trailingPE": 19.820967,
+  "forwardPE": 17.211119,
   "returnOnEquity": 0.098409995,
   "profitMargins": 0.28643999,
-  "dividendYield": 2.33,
+  "dividendYield": 2.37,
   "beta": 0.547,
-  "currentPrice": 168.69
+  "currentPrice": 168.28
  },
  "BBY": {
   "shortName": "Best Buy Co., Inc.",
-  "trailingPE": 16.51747,
-  "forwardPE": 13.753478,
+  "trailingPE": 16.297836,
+  "forwardPE": 13.561204,
   "returnOnEquity": 0.43126,
   "profitMargins": 0.03014,
-  "dividendYield": 3.83,
+  "dividendYield": 3.87,
   "beta": 1.208,
-  "currentPrice": 99.27
+  "currentPrice": 97.95
  },
  "BE": {
   "shortName": "Bloom Energy Corporation",
-  "trailingPE": 101.88485,
-  "forwardPE": 31.576416,
+  "trailingPE": 86.296974,
+  "forwardPE": 26.745378,
   "returnOnEquity": 0.39609,
   "profitMargins": 0.13533,
   "dividendYield": 0.0,
   "beta": 3.618,
-  "currentPrice": 168.11
+  "currentPrice": 142.39
  },
  "BESALCO.SN": {
   "shortName": "BESALCO S.A.",
-  "trailingPE": 10.628509,
-  "forwardPE": 28.603268,
+  "trailingPE": 10.765914,
+  "forwardPE": 28.439821,
   "returnOnEquity": 0.16588,
   "profitMargins": 0.06194,
   "dividendYield": 3.4,
   "beta": null,
-  "currentPrice": 1155.0
+  "currentPrice": 1148.4
  },
  "BRK-B": {
   "shortName": "Berkshire Hathaway Inc. New",
-  "trailingPE": 16.010075,
-  "forwardPE": 25.071198,
+  "trailingPE": 15.952981,
+  "forwardPE": 24.98179,
   "returnOnEquity": 0.10574,
   "profitMargins": 0.19497,
   "dividendYield": 0.0,
   "beta": 0.571,
-  "currentPrice": 572.04
+  "currentPrice": 570.0
  },
  "BSANTANDER.SN": {
   "shortName": "BANCO SANTANDER-CHILE",
-  "trailingPE": 13.084317,
-  "forwardPE": 19.89487,
+  "trailingPE": 13.214166,
+  "forwardPE": 20.092308,
   "returnOnEquity": 0.23313,
   "profitMargins": 0.47193,
   "dividendYield": 4.3,
   "beta": 0.268,
-  "currentPrice": 77.59
+  "currentPrice": 78.36
  },
  "BX": {
   "shortName": "Blackstone Inc.",
-  "trailingPE": 25.832962,
-  "forwardPE": 15.757563,
+  "trailingPE": 24.677063,
+  "forwardPE": 15.052487,
   "returnOnEquity": 0.32381,
   "profitMargins": 0.22993,
-  "dividendYield": 4.37,
+  "dividendYield": 4.36,
   "beta": 1.534,
-  "currentPrice": 115.99
+  "currentPrice": 110.8
  },
  "CB": {
   "shortName": "Chubb Limited",
-  "trailingPE": 12.972659,
-  "forwardPE": 12.558281,
+  "trailingPE": 13.025937,
+  "forwardPE": 12.609857,
   "returnOnEquity": 0.1425,
   "profitMargins": 0.18127,
   "dividendYield": 1.1,
   "beta": 0.286,
-  "currentPrice": 370.11
+  "currentPrice": 371.63
  },
  "CMCSA": {
   "shortName": "Comcast Corporation",
-  "trailingPE": 7.867089,
-  "forwardPE": 7.0587506,
+  "trailingPE": 7.8797464,
+  "forwardPE": 7.070108,
   "returnOnEquity": 0.11432,
   "profitMargins": 0.092,
-  "dividendYield": 5.23,
+  "dividendYield": 5.31,
   "beta": 0.707,
-  "currentPrice": 24.86
+  "currentPrice": 24.9
  },
  "CME": {
   "shortName": "CME Group Inc.",
-  "trailingPE": 25.107378,
-  "forwardPE": 23.111893,
+  "trailingPE": 25.209837,
+  "forwardPE": 23.206207,
   "returnOnEquity": 0.16131,
   "profitMargins": 0.63482,
-  "dividendYield": 1.68,
+  "dividendYield": 1.7,
   "beta": 0.184,
-  "currentPrice": 306.31
+  "currentPrice": 307.56
  },
  "CNC": {
   "shortName": "Centene Corporation",
-  "trailingPE": 22.536083,
-  "forwardPE": 11.768084,
+  "trailingPE": 21.917524,
+  "forwardPE": 11.44508,
   "returnOnEquity": 0.067389995,
   "profitMargins": 0.008090001,
   "dividendYield": 0.0,
   "beta": 1.079,
-  "currentPrice": 65.58
+  "currentPrice": 63.78
  },
  "COPEC.SN": {
   "shortName": "EMPRESAS COPEC S.A.",
-  "trailingPE": 10.233847,
-  "forwardPE": 10.336023,
+  "trailingPE": 10.248432,
+  "forwardPE": 10.350754,
   "returnOnEquity": 0.09034,
   "profitMargins": 0.03654,
   "dividendYield": 2.88,
   "beta": 0.275,
-  "currentPrice": 6315.0
+  "currentPrice": 6324.0
  },
  "COST": {
   "shortName": "Costco Wholesale Corporation",
-  "trailingPE": 52.689304,
-  "forwardPE": 43.67727,
+  "trailingPE": 53.090076,
+  "forwardPE": 44.009495,
   "returnOnEquity": 0.28402,
   "profitMargins": 0.03043,
   "dividendYield": 0.54,
   "beta": 0.852,
-  "currentPrice": 1093.83
+  "currentPrice": 1102.15
  },
  "CRL": {
   "shortName": "Charles River Laboratories Inte",
-  "trailingPE": 356.44565,
-  "forwardPE": 25.283535,
+  "trailingPE": 341.65216,
+  "forwardPE": 24.236687,
   "returnOnEquity": 0.0126600005,
   "profitMargins": 0.01011,
   "dividendYield": 0.0,
   "beta": 1.338,
-  "currentPrice": 327.93
+  "currentPrice": 314.32
  },
  "DELL": {
   "shortName": "Dell Technologies Inc.",
-  "trailingPE": 18.17093,
-  "forwardPE": 10.198631,
+  "trailingPE": 16.163952,
+  "forwardPE": 9.072193,
   "returnOnEquity": null,
   "profitMargins": 0.07525,
-  "dividendYield": 0.8,
+  "dividendYield": 0.81,
   "beta": 1.436,
-  "currentPrice": 312.54
+  "currentPrice": 278.02
  },
  "DRI": {
   "shortName": "Darden Restaurants, Inc.",
-  "trailingPE": 22.466019,
-  "forwardPE": 18.667402,
+  "trailingPE": 21.916506,
+  "forwardPE": 18.210802,
   "returnOnEquity": 0.55431,
   "profitMargins": 0.08845,
-  "dividendYield": 2.71,
+  "dividendYield": 2.8,
   "beta": 0.634,
-  "currentPrice": 231.4
+  "currentPrice": 225.74
  },
  "DUK": {
   "shortName": "Duke Energy Corporation (Holdin",
-  "trailingPE": 18.894428,
-  "forwardPE": 17.981937,
+  "trailingPE": 19.029325,
+  "forwardPE": 18.11032,
   "returnOnEquity": 0.10099,
   "profitMargins": 0.16158001,
-  "dividendYield": 3.34,
+  "dividendYield": 3.37,
   "beta": 0.308,
-  "currentPrice": 128.86
+  "currentPrice": 129.78
  },
  "ECL.SN": {
   "shortName": "ENGIE ENERGIA CHILE S.A.",
-  "trailingPE": 7.736525,
-  "forwardPE": 14.3284235,
+  "trailingPE": 7.61841,
+  "forwardPE": 14.109669,
   "returnOnEquity": 0.15486,
   "profitMargins": 0.14302,
   "dividendYield": 2.85,
   "beta": 0.375,
-  "currentPrice": 1965.0
+  "currentPrice": 1935.0
  },
  "EIX": {
   "shortName": "Edison International",
-  "trailingPE": 6.6971307,
-  "forwardPE": 9.698414,
+  "trailingPE": 6.6142406,
+  "forwardPE": 9.578376,
   "returnOnEquity": 0.18756,
   "profitMargins": 0.19597,
   "dividendYield": 5.57,
   "beta": 0.551,
-  "currentPrice": 63.02
+  "currentPrice": 62.24
  },
  "ENELCHILE.SN": {
   "shortName": "ENEL CHILE S.A.",
-  "trailingPE": 10.658762,
-  "forwardPE": 15.739301,
+  "trailingPE": 10.840579,
+  "forwardPE": 16.007782,
   "returnOnEquity": 0.11054,
   "profitMargins": 0.1297,
   "dividendYield": 4.25,
   "beta": 0.45,
-  "currentPrice": 80.9
+  "currentPrice": 82.28
  },
  "EVRG": {
   "shortName": "Evergy, Inc.",
-  "trailingPE": 19.258352,
-  "forwardPE": 18.898357,
+  "trailingPE": 19.138086,
+  "forwardPE": 18.780338,
   "returnOnEquity": 0.10058,
   "profitMargins": 0.16670999,
-  "dividendYield": 3.32,
+  "dividendYield": 3.34,
   "beta": 0.469,
-  "currentPrice": 86.47
+  "currentPrice": 85.93
  },
  "EXR": {
   "shortName": "Extra Space Storage Inc",
-  "trailingPE": 31.697153,
-  "forwardPE": 31.806862,
+  "trailingPE": 31.485773,
+  "forwardPE": 31.59475,
   "returnOnEquity": 0.07705,
   "profitMargins": 0.2953,
-  "dividendYield": 4.13,
+  "dividendYield": 4.16,
   "beta": 1.089,
-  "currentPrice": 155.95
+  "currentPrice": 154.91
  },
  "FCX": {
   "shortName": "Freeport-McMoRan, Inc.",
-  "trailingPE": 20.638655,
-  "forwardPE": 11.640196,
+  "trailingPE": 19.323528,
+  "forwardPE": 10.898466,
   "returnOnEquity": 0.15719,
   "profitMargins": 0.13029,
-  "dividendYield": 1.17,
+  "dividendYield": 1.22,
   "beta": 1.373,
-  "currentPrice": 49.12
+  "currentPrice": 45.99
  },
  "FE": {
   "shortName": "FirstEnergy Corp.",
-  "trailingPE": 22.768118,
-  "forwardPE": 15.995466,
+  "trailingPE": 22.719807,
+  "forwardPE": 15.961526,
   "returnOnEquity": 0.10041001,
   "profitMargins": 0.07485,
-  "dividendYield": 3.9,
+  "dividendYield": 3.95,
   "beta": 0.374,
-  "currentPrice": 47.13
+  "currentPrice": 47.03
  },
  "FIX": {
   "shortName": "Comfort Systems USA, Inc.",
-  "trailingPE": 24.060907,
-  "forwardPE": 16.554518,
+  "trailingPE": 22.51555,
+  "forwardPE": 15.491272,
   "returnOnEquity": 0.58608,
   "profitMargins": 0.1301,
-  "dividendYield": 0.35,
+  "dividendYield": 0.36,
   "beta": 1.643,
-  "currentPrice": 1114.02
+  "currentPrice": 1042.47
  },
  "FRT": {
   "shortName": "Federal Realty Investment Trust",
-  "trailingPE": 22.086,
-  "forwardPE": 35.080307,
+  "trailingPE": 22.053999,
+  "forwardPE": 35.02948,
   "returnOnEquity": 0.12941,
   "profitMargins": 0.32588002,
-  "dividendYield": 4.13,
+  "dividendYield": 4.2,
   "beta": 0.952,
-  "currentPrice": 110.43
+  "currentPrice": 110.27
  },
  "GEV": {
   "shortName": "GE Vernova Inc.",
-  "trailingPE": 19.855082,
-  "forwardPE": 29.200363,
+  "trailingPE": 18.359938,
+  "forwardPE": 27.001493,
   "returnOnEquity": 0.93035007,
   "profitMargins": 0.23542,
   "dividendYield": 0.26,
   "beta": 1.058,
-  "currentPrice": 756.28
+  "currentPrice": 699.33
  },
  "GRMN": {
   "shortName": "Garmin Ltd.",
-  "trailingPE": 26.10759,
-  "forwardPE": 23.706493,
+  "trailingPE": 25.74832,
+  "forwardPE": 23.380266,
   "returnOnEquity": 0.22379999,
   "profitMargins": 0.25579,
-  "dividendYield": 1.5,
+  "dividendYield": 1.55,
   "beta": 0.897,
-  "currentPrice": 271.78
+  "currentPrice": 268.04
  },
  "HIG": {
   "shortName": "The Hartford Insurance Group, I",
-  "trailingPE": 9.074967,
-  "forwardPE": 9.958669,
+  "trailingPE": 9.159304,
+  "forwardPE": 10.051218,
   "returnOnEquity": 0.23251,
   "profitMargins": 0.15574999,
-  "dividendYield": 1.97,
+  "dividendYield": 1.98,
   "beta": 0.465,
-  "currentPrice": 135.58
+  "currentPrice": 136.84
  },
  "HSY": {
   "shortName": "The Hershey Company",
-  "trailingPE": 19.688913,
-  "forwardPE": 18.380684,
+  "trailingPE": 19.850677,
+  "forwardPE": 18.531698,
   "returnOnEquity": 0.37999,
   "profitMargins": 0.14632,
-  "dividendYield": 3.3,
+  "dividendYield": 3.34,
   "beta": 0.068,
-  "currentPrice": 174.05
+  "currentPrice": 175.48
  },
  "ILC.SN": {
   "shortName": "INVERSIONES LA CONSTRUCCION S.A",
-  "trailingPE": 27.400566,
-  "forwardPE": 17.083725,
+  "trailingPE": 27.227955,
+  "forwardPE": 16.976105,
   "returnOnEquity": 0.25261,
   "profitMargins": 0.07492,
   "dividendYield": 3.82,
   "beta": 0.563,
-  "currentPrice": 22700.0
+  "currentPrice": 22557.0
  },
  "ILMN": {
   "shortName": "Illumina, Inc.",
-  "trailingPE": 34.536144,
-  "forwardPE": 32.454372,
+  "trailingPE": 33.18761,
+  "forwardPE": 31.187122,
   "returnOnEquity": 0.32391998,
   "profitMargins": 0.19718,
   "dividendYield": 0.0,
   "beta": 1.451,
-  "currentPrice": 200.655
- },
- "INTC": {
-  "shortName": "Intel Corporation",
-  "trailingPE": null,
-  "forwardPE": 31.120495,
-  "returnOnEquity": -0.0962,
-  "profitMargins": -0.20089,
-  "dividendYield": 0.0,
-  "beta": 2.426,
-  "currentPrice": 55.72
+  "currentPrice": 192.82
  },
  "INVH": {
   "shortName": "Invitation Homes Inc.",
-  "trailingPE": 22.885965,
-  "forwardPE": 37.069664,
+  "trailingPE": 23.008772,
+  "forwardPE": 37.26858,
   "returnOnEquity": 0.07395,
   "profitMargins": 0.23887,
-  "dividendYield": 4.54,
+  "dividendYield": 4.6,
   "beta": 0.812,
-  "currentPrice": 26.09
+  "currentPrice": 26.23
  },
  "ITAUCL.SN": {
   "shortName": "BANCO ITAU CHILE",
-  "trailingPE": 19.546055,
-  "forwardPE": 11.979517,
+  "trailingPE": 19.402908,
+  "forwardPE": 11.839625,
   "returnOnEquity": 0.05854,
   "profitMargins": 0.18702,
   "dividendYield": 5.23,
   "beta": 0.382,
-  "currentPrice": 22950.0
+  "currentPrice": 22682.0
  },
  "JNJ": {
   "shortName": "Johnson & Johnson",
-  "trailingPE": 40.537178,
-  "forwardPE": 23.002344,
+  "trailingPE": 41.04249,
+  "forwardPE": 23.292364,
   "returnOnEquity": 0.20018,
   "profitMargins": 0.16203,
-  "dividendYield": 1.97,
+  "dividendYield": 2.01,
   "beta": 0.2,
-  "currentPrice": 267.14
+  "currentPrice": 270.47
  },
  "KIM": {
   "shortName": "Kimco Realty Corporation (HC)",
-  "trailingPE": 23.682241,
-  "forwardPE": 28.552113,
+  "trailingPE": 23.71028,
+  "forwardPE": 28.585917,
   "returnOnEquity": 0.07196,
   "profitMargins": 0.34058997,
-  "dividendYield": 4.36,
+  "dividendYield": 4.42,
   "beta": 0.931,
-  "currentPrice": 25.34
+  "currentPrice": 25.37
  },
  "KO": {
   "shortName": "Coca-Cola Company (The)",
-  "trailingPE": 28.34513,
-  "forwardPE": 27.192923,
+  "trailingPE": 28.610619,
+  "forwardPE": 27.447618,
   "returnOnEquity": 0.40592998,
   "profitMargins": 0.28654,
-  "dividendYield": 2.16,
+  "dividendYield": 2.21,
   "beta": 0.269,
-  "currentPrice": 96.09
+  "currentPrice": 96.99
  },
  "L": {
   "shortName": "Loews Corporation",
-  "trailingPE": 15.172891,
-  "forwardPE": 37.827583,
+  "trailingPE": 15.131397,
+  "forwardPE": 37.724136,
   "returnOnEquity": 0.082100004,
   "profitMargins": 0.07928,
   "dividendYield": 0.23,
   "beta": 0.486,
-  "currentPrice": 109.7
+  "currentPrice": 109.4
  },
  "LEN": {
   "shortName": "Lennar Corporation",
-  "trailingPE": 15.138257,
-  "forwardPE": 15.786647,
+  "trailingPE": 15.291666,
+  "forwardPE": 15.946626,
   "returnOnEquity": 0.05962,
   "profitMargins": 0.04092,
-  "dividendYield": 2.41,
+  "dividendYield": 2.5,
   "beta": 1.381,
-  "currentPrice": 79.93
+  "currentPrice": 80.74
  },
  "LIN": {
   "shortName": "Linde plc",
-  "trailingPE": 33.878483,
-  "forwardPE": 26.102825,
+  "trailingPE": 33.388443,
+  "forwardPE": 25.704033,
   "returnOnEquity": 0.17723,
   "profitMargins": 0.19336,
   "dividendYield": 1.25,
   "beta": 0.68,
-  "currentPrice": 510.21
+  "currentPrice": 502.83
  },
  "LITE": {
   "shortName": "Lumentum Holdings Inc.",
   "trailingPE": null,
-  "forwardPE": 13.333905,
+  "forwardPE": 11.474908,
   "returnOnEquity": -2.45788,
   "profitMargins": -1.75777,
   "dividendYield": 0.0,
   "beta": 1.645,
-  "currentPrice": 535.15
+  "currentPrice": 460.54
  },
  "LYB": {
   "shortName": "LyondellBasell Industries NV",
-  "trailingPE": 14.089587,
-  "forwardPE": 9.182636,
+  "trailingPE": 13.520581,
+  "forwardPE": 8.811796,
   "returnOnEquity": 0.12182,
   "profitMargins": 0.040510003,
-  "dividendYield": 4.72,
+  "dividendYield": 4.74,
   "beta": 0.319,
-  "currentPrice": 58.19
+  "currentPrice": 55.84
  },
  "MAA": {
   "shortName": "Mid-America Apartment Communiti",
-  "trailingPE": 34.363636,
-  "forwardPE": 34.5777,
+  "trailingPE": 34.215153,
+  "forwardPE": 34.428295,
   "returnOnEquity": 0.069070004,
   "profitMargins": 0.17427,
-  "dividendYield": 5.3,
+  "dividendYield": 5.4,
   "beta": 0.705,
-  "currentPrice": 113.4
+  "currentPrice": 112.91
  },
  "MCD": {
   "shortName": "McDonald's Corporation",
-  "trailingPE": 21.546677,
-  "forwardPE": 19.947676,
+  "trailingPE": 21.617086,
+  "forwardPE": 20.012861,
   "returnOnEquity": null,
   "profitMargins": 0.32377,
-  "dividendYield": 2.82,
+  "dividendYield": 2.83,
   "beta": 0.431,
-  "currentPrice": 272.35
+  "currentPrice": 273.24
  },
  "MKC": {
   "shortName": "McCormick & Company, Incorporat",
-  "trailingPE": 8.287522,
-  "forwardPE": 14.259978,
+  "trailingPE": 8.571428,
+  "forwardPE": 14.748483,
   "returnOnEquity": 0.22623,
   "profitMargins": 0.19393,
-  "dividendYield": 4.4,
+  "dividendYield": 4.45,
   "beta": 0.669,
-  "currentPrice": 45.83
+  "currentPrice": 47.4
  },
  "MPC": {
   "shortName": "Marathon Petroleum Corporation",
-  "trailingPE": 7.290073,
-  "forwardPE": 6.1175246,
+  "trailingPE": 7.275411,
+  "forwardPE": 6.105221,
   "returnOnEquity": 0.6046,
   "profitMargins": 0.08342,
-  "dividendYield": 1.18,
+  "dividendYield": 1.2,
   "beta": 0.509,
-  "currentPrice": 367.93
+  "currentPrice": 367.19
  },
  "MRNA": {
   "shortName": "Moderna, Inc.",
   "trailingPE": null,
-  "forwardPE": -47.58722,
+  "forwardPE": -46.553493,
   "returnOnEquity": -0.34502,
   "profitMargins": -1.10455,
   "dividendYield": 0.0,
   "beta": 1.166,
-  "currentPrice": 199.33
+  "currentPrice": 195.0
  },
  "MRVL": {
   "shortName": "Marvell Technology, Inc.",
-  "trailingPE": 45.549343,
-  "forwardPE": 18.785553,
+  "trailingPE": 40.223686,
+  "forwardPE": 16.589134,
   "returnOnEquity": 0.16523,
   "profitMargins": 0.27934998,
-  "dividendYield": 0.16,
+  "dividendYield": 0.17,
   "beta": 2.327,
-  "currentPrice": 138.47
+  "currentPrice": 122.28
  },
  "MU": {
   "shortName": "Micron Technology, Inc.",
-  "trailingPE": 9.288847,
-  "forwardPE": 3.3232498,
+  "trailingPE": 7.998251,
+  "forwardPE": 2.846877,
   "returnOnEquity": 0.8826,
   "profitMargins": 0.63796,
   "dividendYield": 0.09,
   "beta": 2.398,
-  "currentPrice": 690.44
+  "currentPrice": 594.51
  },
  "NKE": {
   "shortName": "Nike, Inc.",
-  "trailingPE": 16.504808,
-  "forwardPE": 24.699621,
+  "trailingPE": 15.826922,
+  "forwardPE": 23.685156,
   "returnOnEquity": 0.21563,
   "profitMargins": 0.0674,
-  "dividendYield": 4.52,
+  "dividendYield": 4.78,
   "beta": 1.031,
-  "currentPrice": 34.33
+  "currentPrice": 32.92
  },
  "NUE": {
   "shortName": "Nucor Corporation",
-  "trailingPE": 15.759872,
-  "forwardPE": 10.782175,
+  "trailingPE": 15.262421,
+  "forwardPE": 10.441841,
   "returnOnEquity": 0.17583,
   "profitMargins": 0.092609994,
-  "dividendYield": 0.89,
+  "dividendYield": 0.91,
   "beta": 1.815,
-  "currentPrice": 247.43
+  "currentPrice": 239.62
  },
  "O": {
   "shortName": "Realty Income Corporation",
-  "trailingPE": 39.49315,
-  "forwardPE": 37.127663,
+  "trailingPE": 39.746574,
+  "forwardPE": 37.365906,
   "returnOnEquity": 0.03479,
   "profitMargins": 0.21809,
-  "dividendYield": 5.64,
+  "dividendYield": 5.7,
   "beta": 0.649,
-  "currentPrice": 57.66
+  "currentPrice": 58.03
  },
  "PAYX": {
   "shortName": "Paychex, Inc.",
-  "trailingPE": 22.103174,
-  "forwardPE": 17.430408,
+  "trailingPE": 22.347221,
+  "forwardPE": 17.622862,
   "returnOnEquity": 0.47055,
   "profitMargins": 0.27353,
-  "dividendYield": 4.19,
+  "dividendYield": 4.27,
   "beta": 0.796,
-  "currentPrice": 111.4
+  "currentPrice": 112.63
  },
  "PFE": {
   "shortName": "Pfizer, Inc.",
-  "trailingPE": 39.342857,
-  "forwardPE": 9.3227,
+  "trailingPE": 39.142857,
+  "forwardPE": 9.275307,
   "returnOnEquity": 0.04468,
   "profitMargins": 0.06339,
-  "dividendYield": 6.13,
+  "dividendYield": 6.25,
   "beta": 0.297,
-  "currentPrice": 27.54
+  "currentPrice": 27.4
  },
  "PG": {
   "shortName": "Procter & Gamble Company (The)",
-  "trailingPE": 25.278616,
-  "forwardPE": 22.626844,
+  "trailingPE": 25.50753,
+  "forwardPE": 22.80715,
   "returnOnEquity": 0.29609,
   "profitMargins": 0.18229,
-  "dividendYield": 2.56,
+  "dividendYield": 2.59,
   "beta": 0.361,
-  "currentPrice": 167.85
+  "currentPrice": 169.37
  },
  "PGR": {
   "shortName": "Progressive Corporation (The)",
-  "trailingPE": 11.584887,
-  "forwardPE": 14.272123,
+  "trailingPE": 11.656927,
+  "forwardPE": 14.403684,
   "returnOnEquity": 0.33238998,
   "profitMargins": 0.12674,
-  "dividendYield": 0.18,
+  "dividendYield": 0.17,
   "beta": 0.204,
-  "currentPrice": 229.96
+  "currentPrice": 231.39
  },
  "PSX": {
   "shortName": "Phillips 66",
-  "trailingPE": 7.784157,
-  "forwardPE": 7.565825,
+  "trailingPE": 7.6757536,
+  "forwardPE": 7.4604626,
   "returnOnEquity": 0.39835998,
   "profitMargins": 0.07477,
-  "dividendYield": 2.17,
+  "dividendYield": 2.19,
   "beta": 0.672,
-  "currentPrice": 242.71
+  "currentPrice": 239.33
  },
  "PWR": {
   "shortName": "Quanta Services, Inc.",
-  "trailingPE": 53.161083,
-  "forwardPE": 27.035,
+  "trailingPE": 49.29718,
+  "forwardPE": 25.727962,
   "returnOnEquity": 0.18023,
   "profitMargins": 0.04512,
   "dividendYield": 0.09,
   "beta": 1.284,
-  "currentPrice": 587.43
+  "currentPrice": 559.03
  },
  "QUINENCO.SN": {
   "shortName": "QUINENCO S.A.",
-  "trailingPE": 11.09857,
-  "forwardPE": 11.440207,
+  "trailingPE": 11.041282,
+  "forwardPE": 11.331445,
   "returnOnEquity": 0.0998,
   "profitMargins": 0.08014,
   "dividendYield": 2.69,
   "beta": 0.141,
-  "currentPrice": 4523.0
+  "currentPrice": 4480.0
  },
  "REG": {
   "shortName": "Regency Centers Corporation",
-  "trailingPE": 26.537636,
-  "forwardPE": 29.286352,
+  "trailingPE": 26.394266,
+  "forwardPE": 29.128132,
   "returnOnEquity": 0.07666,
   "profitMargins": 0.30616,
-  "dividendYield": 4.26,
+  "dividendYield": 4.32,
   "beta": 0.817,
-  "currentPrice": 74.04
+  "currentPrice": 73.64
  },
  "RF": {
   "shortName": "Regions Financial Corporation",
-  "trailingPE": 10.705882,
-  "forwardPE": 9.581704,
+  "trailingPE": 10.431373,
+  "forwardPE": 9.3360195,
   "returnOnEquity": 0.1238,
   "profitMargins": 0.31288,
-  "dividendYield": 4.29,
+  "dividendYield": 4.4,
   "beta": 1.021,
-  "currentPrice": 27.3
+  "currentPrice": 26.6
  },
  "RSG": {
   "shortName": "Republic Services, Inc.",
-  "trailingPE": 34.139893,
-  "forwardPE": 30.754852,
+  "trailingPE": 34.15374,
+  "forwardPE": 30.767328,
   "returnOnEquity": 0.1848,
   "profitMargins": 0.12919,
-  "dividendYield": 1.08,
+  "dividendYield": 1.09,
   "beta": 0.324,
-  "currentPrice": 246.49
+  "currentPrice": 246.59
  },
  "SLB": {
   "shortName": "SLB Limited",
-  "trailingPE": 23.252428,
-  "forwardPE": 15.561245,
+  "trailingPE": 22.2767,
+  "forwardPE": 14.908257,
   "returnOnEquity": 0.1166,
   "profitMargins": 0.08396,
-  "dividendYield": 2.44,
+  "dividendYield": 2.46,
   "beta": 0.792,
-  "currentPrice": 47.9
+  "currentPrice": 45.89
  },
  "SNA": {
   "shortName": "Snap-On Incorporated",
-  "trailingPE": 18.556883,
-  "forwardPE": 17.171974,
+  "trailingPE": 18.123636,
+  "forwardPE": 16.77106,
   "returnOnEquity": 0.17323999,
   "profitMargins": 0.19207,
-  "dividendYield": 2.7,
+  "dividendYield": 2.73,
   "beta": 0.746,
-  "currentPrice": 357.22
+  "currentPrice": 348.88
+ },
+ "SNDK": {
+  "shortName": "Sandisk Corporation",
+  "trailingPE": 5.066496,
+  "forwardPE": 2.1930854,
+  "returnOnEquity": 1.41174,
+  "profitMargins": 0.67039,
+  "dividendYield": 0.0,
+  "beta": null,
+  "currentPrice": 79.24
  },
  "SO": {
   "shortName": "Southern Company (The)",
-  "trailingPE": 21.299086,
-  "forwardPE": 18.901567,
+  "trailingPE": 21.262556,
+  "forwardPE": 18.869148,
   "returnOnEquity": 0.11897001,
   "profitMargins": 0.16003999,
-  "dividendYield": 3.22,
+  "dividendYield": 3.26,
   "beta": 0.286,
-  "currentPrice": 93.29
+  "currentPrice": 93.13
  },
  "SPG": {
   "shortName": "Simon Property Group, Inc.",
-  "trailingPE": 16.261372,
-  "forwardPE": 33.21829,
+  "trailingPE": 16.198557,
+  "forwardPE": 33.08997,
   "returnOnEquity": 1.2519699,
   "profitMargins": 0.6309,
-  "dividendYield": 3.98,
+  "dividendYield": 4.08,
   "beta": 1.306,
-  "currentPrice": 225.22
+  "currentPrice": 224.35
  },
  "STLD": {
   "shortName": "Steel Dynamics, Inc.",
-  "trailingPE": 16.119646,
-  "forwardPE": 9.636799,
+  "trailingPE": 15.211226,
+  "forwardPE": 9.0937195,
   "returnOnEquity": 0.20812,
   "profitMargins": 0.088190004,
-  "dividendYield": 0.95,
+  "dividendYield": 0.97,
   "beta": 1.443,
-  "currentPrice": 218.26
+  "currentPrice": 205.96
  },
  "TGT": {
   "shortName": "Target Corporation",
-  "trailingPE": 15.563197,
-  "forwardPE": 17.122244,
+  "trailingPE": 15.41171,
+  "forwardPE": 16.955582,
   "returnOnEquity": 0.29018998,
   "profitMargins": 0.04488,
-  "dividendYield": 2.8,
-  "beta": null,
-  "currentPrice": 167.46
+  "dividendYield": 2.77,
+  "beta": 0.932,
+  "currentPrice": 165.83
  },
  "TRGP": {
   "shortName": "Targa Resources, Inc.",
-  "trailingPE": 25.258408,
-  "forwardPE": 23.12445,
+  "trailingPE": 24.628317,
+  "forwardPE": 22.547594,
   "returnOnEquity": 0.73421997,
   "profitMargins": 0.13455,
-  "dividendYield": 1.72,
+  "dividendYield": 1.75,
   "beta": 0.744,
-  "currentPrice": 285.42
+  "currentPrice": 278.3
  },
  "TSCO": {
   "shortName": "Tractor Supply Company",
-  "trailingPE": 20.827957,
-  "forwardPE": 18.830505,
+  "trailingPE": 20.666666,
+  "forwardPE": 18.684683,
   "returnOnEquity": 0.37347,
   "profitMargins": 0.061300002,
-  "dividendYield": 2.46,
+  "dividendYield": 2.48,
   "beta": 0.484,
-  "currentPrice": 38.74
+  "currentPrice": 38.44
  },
  "UPS": {
   "shortName": "United Parcel Service, Inc.",
-  "trailingPE": 21.02312,
-  "forwardPE": 13.477458,
+  "trailingPE": 20.466282,
+  "forwardPE": 13.120481,
   "returnOnEquity": 0.28645,
   "profitMargins": 0.0484,
-  "dividendYield": 5.91,
+  "dividendYield": 6.01,
   "beta": 0.948,
-  "currentPrice": 109.11
+  "currentPrice": 106.22
  },
  "VAPORES.SN": {
   "shortName": "COMPANIA SUD AMERICANA DE VAPOR",
   "trailingPE": null,
-  "forwardPE": 12.406736,
+  "forwardPE": 12.15026,
   "returnOnEquity": -0.00732,
   "profitMargins": 0.0,
   "dividendYield": 8.59,
   "beta": 0.306,
-  "currentPrice": 47.89
+  "currentPrice": 46.9
  },
  "VLO": {
   "shortName": "Valero Energy Corporation",
-  "trailingPE": 7.6975207,
-  "forwardPE": 6.607591,
+  "trailingPE": 7.6001816,
+  "forwardPE": 6.524035,
   "returnOnEquity": 0.46872002,
   "profitMargins": 0.08834,
-  "dividendYield": 1.4,
+  "dividendYield": 1.42,
   "beta": 0.552,
-  "currentPrice": 338.46
+  "currentPrice": 334.18
  },
  "VTRS": {
   "shortName": "Viatris Inc.",
   "trailingPE": null,
-  "forwardPE": 7.2107625,
+  "forwardPE": 6.939804,
   "returnOnEquity": -0.04206,
   "profitMargins": -0.04127,
-  "dividendYield": 2.37,
+  "dividendYield": 2.42,
   "beta": 0.871,
-  "currentPrice": 19.88
+  "currentPrice": 19.63
  },
  "WEC": {
   "shortName": "WEC Energy Group, Inc.",
-  "trailingPE": 21.110909,
-  "forwardPE": 19.245018,
+  "trailingPE": 21.285454,
+  "forwardPE": 19.404137,
   "returnOnEquity": 0.12494001,
   "profitMargins": 0.17527,
-  "dividendYield": 3.24,
+  "dividendYield": 3.28,
   "beta": 0.416,
-  "currentPrice": 116.11
+  "currentPrice": 117.07
  },
  "WM": {
   "shortName": "Waste Management, Inc.",
-  "trailingPE": 31.321522,
-  "forwardPE": 26.6906,
+  "trailingPE": 31.447508,
+  "forwardPE": 26.797958,
   "returnOnEquity": 0.31679,
   "profitMargins": 0.11776,
-  "dividendYield": 1.57,
+  "dividendYield": 1.58,
   "beta": 0.386,
-  "currentPrice": 238.67
+  "currentPrice": 239.63
  },
  "ZTS": {
   "shortName": "Zoetis Inc.",
-  "trailingPE": 13.739796,
-  "forwardPE": 12.677337,
+  "trailingPE": 13.454082,
+  "forwardPE": 12.413715,
   "returnOnEquity": 0.57626,
   "profitMargins": 0.26406,
-  "dividendYield": 2.48,
+  "dividendYield": 2.62,
   "beta": 0.678,
-  "currentPrice": 80.79
+  "currentPrice": 79.11
  }
 }
