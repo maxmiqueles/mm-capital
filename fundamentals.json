@@ -5,19 +5,19 @@
   "forwardPE": 16.337612,
   "returnOnEquity": 0.12165,
   "profitMargins": 0.21240999,
-  "dividendYield": 2.04,
+  "dividendYield": 2.01,
   "beta": 0.548,
   "currentPrice": 127.51
  },
  "AGUAS-A.SN": {
   "shortName": "AGUAS ANDINAS S.A., SERIE A",
-  "trailingPE": 13.759724,
-  "forwardPE": 11.552976,
+  "trailingPE": 13.914866,
+  "forwardPE": 11.683236,
   "returnOnEquity": 0.106639996,
   "profitMargins": 0.19216,
   "dividendYield": 5.37,
   "beta": 0.141,
-  "currentPrice": 318.4
+  "currentPrice": 321.99
  },
  "APA": {
   "shortName": "APA Corporation",
@@ -25,7 +25,7 @@
   "forwardPE": 7.7594504,
   "returnOnEquity": 0.33321998,
   "profitMargins": 0.23492001,
-  "dividendYield": 2.23,
+  "dividendYield": 2.2,
   "beta": 0.282,
   "currentPrice": 45.48
  },
@@ -35,17 +35,17 @@
   "forwardPE": 19.190598,
   "returnOnEquity": 0.11063,
   "profitMargins": 0.086899996,
-  "dividendYield": 4.08,
+  "dividendYield": 4.03,
   "beta": 1.507,
   "currentPrice": 133.94
  },
  "ATO": {
   "shortName": "Atmos Energy Corporation",
   "trailingPE": 20.407537,
-  "forwardPE": 17.693312,
+  "forwardPE": 17.677301,
   "returnOnEquity": 0.098409995,
   "profitMargins": 0.28643999,
-  "dividendYield": 2.38,
+  "dividendYield": 2.36,
   "beta": 0.547,
   "currentPrice": 173.26
  },
@@ -55,8 +55,8 @@
   "forwardPE": 13.928776,
   "returnOnEquity": 0.50476,
   "profitMargins": 0.03472,
-  "dividendYield": 3.85,
-  "beta": null,
+  "dividendYield": 3.74,
+  "beta": 1.208,
   "currentPrice": 102.58
  },
  "BE": {
@@ -71,13 +71,13 @@
  },
  "BESALCO.SN": {
   "shortName": "BESALCO S.A.",
-  "trailingPE": 10.6072035,
-  "forwardPE": 27.860327,
+  "trailingPE": 10.936263,
+  "forwardPE": 28.724615,
   "returnOnEquity": 0.16588,
   "profitMargins": 0.06194,
   "dividendYield": 3.48,
   "beta": null,
-  "currentPrice": 1125.0
+  "currentPrice": 1159.9
  },
  "BRK-B": {
   "shortName": "Berkshire Hathaway Inc. New",
@@ -91,13 +91,13 @@
  },
  "BSANTANDER.SN": {
   "shortName": "BANCO SANTANDER-CHILE",
-  "trailingPE": 13.507588,
-  "forwardPE": 20.53846,
+  "trailingPE": 13.912311,
+  "forwardPE": 21.153845,
   "returnOnEquity": 0.23313,
   "profitMargins": 0.47193,
   "dividendYield": 4.25,
   "beta": 0.268,
-  "currentPrice": 80.1
+  "currentPrice": 82.5
  },
  "BX": {
   "shortName": "Blackstone Inc.",
@@ -105,7 +105,7 @@
   "forwardPE": 16.159687,
   "returnOnEquity": 0.32381,
   "profitMargins": 0.22993,
-  "dividendYield": 4.24,
+  "dividendYield": 4.25,
   "beta": 1.534,
   "currentPrice": 118.95
  },
@@ -115,7 +115,7 @@
   "forwardPE": 12.911166,
   "returnOnEquity": 0.1425,
   "profitMargins": 0.18127,
-  "dividendYield": 1.09,
+  "dividendYield": 1.07,
   "beta": 0.286,
   "currentPrice": 380.51
  },
@@ -125,7 +125,7 @@
   "forwardPE": 7.305778,
   "returnOnEquity": 0.11432,
   "profitMargins": 0.092,
-  "dividendYield": 5.2,
+  "dividendYield": 5.13,
   "beta": 0.707,
   "currentPrice": 25.73
  },
@@ -135,7 +135,7 @@
   "forwardPE": 23.521599,
   "returnOnEquity": 0.16131,
   "profitMargins": 0.63482,
-  "dividendYield": 1.68,
+  "dividendYield": 1.67,
   "beta": 0.184,
   "currentPrice": 311.74
  },
@@ -151,18 +151,18 @@
  },
  "COPEC.SN": {
   "shortName": "EMPRESAS COPEC S.A.",
-  "trailingPE": 10.403837,
-  "forwardPE": 10.507881,
+  "trailingPE": 10.452454,
+  "forwardPE": 10.556984,
   "returnOnEquity": 0.09034,
   "profitMargins": 0.03654,
   "dividendYield": 2.83,
   "beta": 0.275,
-  "currentPrice": 6420.0
+  "currentPrice": 6450.0
  },
  "COST": {
   "shortName": "Costco Wholesale Corporation",
   "trailingPE": 52.35116,
-  "forwardPE": 43.39696,
+  "forwardPE": 43.36832,
   "returnOnEquity": 0.28402,
   "profitMargins": 0.03043,
   "dividendYield": 0.54,
@@ -184,7 +184,7 @@
   "trailingPE": 17.27093,
   "forwardPE": 9.72424,
   "returnOnEquity": null,
-  "profitMargins": 0.07525,
+  "profitMargins": 0.08655,
   "dividendYield": 0.85,
   "beta": 1.436,
   "currentPrice": 297.06
@@ -195,7 +195,7 @@
   "forwardPE": 19.454758,
   "returnOnEquity": 0.55431,
   "profitMargins": 0.08845,
-  "dividendYield": 2.7,
+  "dividendYield": 2.69,
   "beta": 0.634,
   "currentPrice": 241.16
  },
@@ -205,19 +205,19 @@
   "forwardPE": 18.40382,
   "returnOnEquity": 0.10099,
   "profitMargins": 0.16158001,
-  "dividendYield": 3.31,
+  "dividendYield": 3.29,
   "beta": 0.308,
   "currentPrice": 131.9
  },
  "ECL.SN": {
   "shortName": "ENGIE ENERGIA CHILE S.A.",
-  "trailingPE": 7.72432,
-  "forwardPE": 14.3058195,
+  "trailingPE": 7.8192053,
+  "forwardPE": 14.481552,
   "returnOnEquity": 0.15486,
   "profitMargins": 0.14302,
   "dividendYield": 2.85,
   "beta": 0.375,
-  "currentPrice": 1961.9
+  "currentPrice": 1986.0
  },
  "EIX": {
   "shortName": "Edison International",
@@ -225,19 +225,19 @@
   "forwardPE": 9.755654,
   "returnOnEquity": 0.18756,
   "profitMargins": 0.19597,
-  "dividendYield": 5.64,
+  "dividendYield": 5.54,
   "beta": 0.551,
   "currentPrice": 63.39
  },
  "ENELCHILE.SN": {
   "shortName": "ENEL CHILE S.A.",
-  "trailingPE": 10.705416,
-  "forwardPE": 15.766538,
+  "trailingPE": 10.911492,
+  "forwardPE": 16.07004,
   "returnOnEquity": 0.11054,
   "profitMargins": 0.1297,
   "dividendYield": 4.28,
   "beta": 0.45,
-  "currentPrice": 81.04
+  "currentPrice": 82.6
  },
  "EVRG": {
   "shortName": "Evergy, Inc.",
@@ -245,7 +245,7 @@
   "forwardPE": 19.178286,
   "returnOnEquity": 0.10058,
   "profitMargins": 0.16670999,
-  "dividendYield": 3.31,
+  "dividendYield": 3.29,
   "beta": 0.469,
   "currentPrice": 87.77
  },
@@ -255,7 +255,7 @@
   "forwardPE": 32.91638,
   "returnOnEquity": 0.07705,
   "profitMargins": 0.2953,
-  "dividendYield": 4.08,
+  "dividendYield": 4.02,
   "beta": 1.089,
   "currentPrice": 161.39
  },
@@ -265,7 +265,7 @@
   "forwardPE": 11.589933,
   "returnOnEquity": 0.15719,
   "profitMargins": 0.13029,
-  "dividendYield": 1.26,
+  "dividendYield": 1.24,
   "beta": 1.373,
   "currentPrice": 48.55
  },
@@ -275,7 +275,7 @@
   "forwardPE": 16.131382,
   "returnOnEquity": 0.10041001,
   "profitMargins": 0.07485,
-  "dividendYield": 3.93,
+  "dividendYield": 3.91,
   "beta": 0.374,
   "currentPrice": 47.62
  },
@@ -295,7 +295,7 @@
   "forwardPE": 36.206623,
   "returnOnEquity": 0.12941,
   "profitMargins": 0.32588002,
-  "dividendYield": 4.12,
+  "dividendYield": 4.06,
   "beta": 0.952,
   "currentPrice": 114.25
  },
@@ -315,7 +315,7 @@
   "forwardPE": 24.40169,
   "returnOnEquity": 0.22379999,
   "profitMargins": 0.25579,
-  "dividendYield": 1.49,
+  "dividendYield": 1.5,
   "beta": 0.897,
   "currentPrice": 279.75
  },
@@ -325,7 +325,7 @@
   "forwardPE": 10.267168,
   "returnOnEquity": 0.23251,
   "profitMargins": 0.15574999,
-  "dividendYield": 1.94,
+  "dividendYield": 1.92,
   "beta": 0.465,
   "currentPrice": 139.78
  },
@@ -335,19 +335,19 @@
   "forwardPE": 19.280445,
   "returnOnEquity": 0.37999,
   "profitMargins": 0.14632,
-  "dividendYield": 3.29,
+  "dividendYield": 3.18,
   "beta": 0.068,
   "currentPrice": 182.57
  },
  "ILC.SN": {
   "shortName": "INVERSIONES LA CONSTRUCCION S.A",
-  "trailingPE": 27.400898,
-  "forwardPE": 17.083725,
+  "trailingPE": 28.004442,
+  "forwardPE": 17.460018,
   "returnOnEquity": 0.25261,
   "profitMargins": 0.07492,
   "dividendYield": 3.81,
   "beta": 0.563,
-  "currentPrice": 22700.0
+  "currentPrice": 23200.0
  },
  "ILMN": {
   "shortName": "Illumina, Inc.",
@@ -365,19 +365,19 @@
   "forwardPE": 40.388496,
   "returnOnEquity": 0.07395,
   "profitMargins": 0.23887,
-  "dividendYield": 4.41,
+  "dividendYield": 4.31,
   "beta": 0.812,
   "currentPrice": 27.82
  },
  "ITAUCL.SN": {
   "shortName": "BANCO ITAU CHILE",
-  "trailingPE": 19.435415,
-  "forwardPE": 11.859461,
+  "trailingPE": 19.62361,
+  "forwardPE": 11.974298,
   "returnOnEquity": 0.05854,
   "profitMargins": 0.18702,
   "dividendYield": 5.25,
   "beta": 0.382,
-  "currentPrice": 22720.0
+  "currentPrice": 22940.0
  },
  "JNJ": {
   "shortName": "Johnson & Johnson",
@@ -385,7 +385,7 @@
   "forwardPE": 23.591194,
   "returnOnEquity": 0.20018,
   "profitMargins": 0.16203,
-  "dividendYield": 1.94,
+  "dividendYield": 1.96,
   "beta": 0.2,
   "currentPrice": 273.94
  },
@@ -395,7 +395,7 @@
   "forwardPE": 29.352112,
   "returnOnEquity": 0.07196,
   "profitMargins": 0.34058997,
-  "dividendYield": 4.34,
+  "dividendYield": 4.3,
   "beta": 0.931,
   "currentPrice": 26.05
  },
@@ -415,7 +415,7 @@
   "forwardPE": 38.31724,
   "returnOnEquity": 0.082100004,
   "profitMargins": 0.07928,
-  "dividendYield": 0.23,
+  "dividendYield": 0.22,
   "beta": 0.486,
   "currentPrice": 111.12
  },
@@ -425,7 +425,7 @@
   "forwardPE": 17.141537,
   "returnOnEquity": 0.05962,
   "profitMargins": 0.04092,
-  "dividendYield": 2.35,
+  "dividendYield": 2.3,
   "beta": 1.381,
   "currentPrice": 86.79
  },
@@ -435,14 +435,14 @@
   "forwardPE": 26.817398,
   "returnOnEquity": 0.17723,
   "profitMargins": 0.19336,
-  "dividendYield": 1.24,
+  "dividendYield": 1.22,
   "beta": 0.68,
   "currentPrice": 524.61
  },
  "LITE": {
   "shortName": "Lumentum Holdings Inc.",
   "trailingPE": null,
-  "forwardPE": 11.874563,
+  "forwardPE": 11.914911,
   "returnOnEquity": -2.45788,
   "profitMargins": -1.75777,
   "dividendYield": 0.0,
@@ -455,7 +455,7 @@
   "forwardPE": 8.988537,
   "returnOnEquity": 0.12182,
   "profitMargins": 0.040510003,
-  "dividendYield": 4.96,
+  "dividendYield": 4.85,
   "beta": 0.319,
   "currentPrice": 56.96
  },
@@ -465,7 +465,7 @@
   "forwardPE": 35.858356,
   "returnOnEquity": 0.069070004,
   "profitMargins": 0.17427,
-  "dividendYield": 5.28,
+  "dividendYield": 5.2,
   "beta": 0.705,
   "currentPrice": 117.6
  },
@@ -475,7 +475,7 @@
   "forwardPE": 20.764332,
   "returnOnEquity": null,
   "profitMargins": 0.32377,
-  "dividendYield": 2.75,
+  "dividendYield": 2.72,
   "beta": 0.431,
   "currentPrice": 283.5
  },
@@ -485,7 +485,7 @@
   "forwardPE": 15.5107975,
   "returnOnEquity": 0.22623,
   "profitMargins": 0.19393,
-  "dividendYield": 4.16,
+  "dividendYield": 4.09,
   "beta": 0.669,
   "currentPrice": 49.85
  },
@@ -495,7 +495,7 @@
   "forwardPE": 6.00744,
   "returnOnEquity": 0.6046,
   "profitMargins": 0.08342,
-  "dividendYield": 1.24,
+  "dividendYield": 1.27,
   "beta": 0.509,
   "currentPrice": 346.27
  },
@@ -535,7 +535,7 @@
   "forwardPE": 26.681805,
   "returnOnEquity": 0.21563,
   "profitMargins": 0.0674,
-  "dividendYield": 4.59,
+  "dividendYield": 4.47,
   "beta": 1.031,
   "currentPrice": 36.66
  },
@@ -555,7 +555,7 @@
   "forwardPE": 38.005184,
   "returnOnEquity": 0.03479,
   "profitMargins": 0.21809,
-  "dividendYield": 5.52,
+  "dividendYield": 5.46,
   "beta": 0.649,
   "currentPrice": 60.25
  },
@@ -565,7 +565,7 @@
   "forwardPE": 18.539757,
   "returnOnEquity": 0.47055,
   "profitMargins": 0.27353,
-  "dividendYield": 4.14,
+  "dividendYield": 4.02,
   "beta": 0.796,
   "currentPrice": 118.49
  },
@@ -585,7 +585,7 @@
   "forwardPE": 23.327435,
   "returnOnEquity": 0.29609,
   "profitMargins": 0.18229,
-  "dividendYield": 2.52,
+  "dividendYield": 2.51,
   "beta": 0.361,
   "currentPrice": 173.23
  },
@@ -612,7 +612,7 @@
  "PWR": {
   "shortName": "Quanta Services, Inc.",
   "trailingPE": 51.17375,
-  "forwardPE": 25.940334,
+  "forwardPE": 25.940287,
   "returnOnEquity": 0.18023,
   "profitMargins": 0.04512,
   "dividendYield": 0.09,
@@ -621,13 +621,13 @@
  },
  "QUINENCO.SN": {
   "shortName": "QUINENCO S.A.",
-  "trailingPE": 11.287513,
-  "forwardPE": 11.634966,
+  "trailingPE": 10.993055,
+  "forwardPE": 11.331445,
   "returnOnEquity": 0.0998,
   "profitMargins": 0.08014,
   "dividendYield": 2.75,
   "beta": 0.141,
-  "currentPrice": 4600.0
+  "currentPrice": 4480.0
  },
  "REG": {
   "shortName": "Regency Centers Corporation",
@@ -635,7 +635,7 @@
   "forwardPE": 29.641607,
   "returnOnEquity": 0.07666,
   "profitMargins": 0.30616,
-  "dividendYield": 4.27,
+  "dividendYield": 4.24,
   "beta": 0.817,
   "currentPrice": 75.52
  },
@@ -645,7 +645,7 @@
   "forwardPE": 9.750174,
   "returnOnEquity": 0.1238,
   "profitMargins": 0.31288,
-  "dividendYield": 4.36,
+  "dividendYield": 4.32,
   "beta": 1.021,
   "currentPrice": 27.78
  },
@@ -655,7 +655,7 @@
   "forwardPE": 31.711847,
   "returnOnEquity": 0.1848,
   "profitMargins": 0.12919,
-  "dividendYield": 1.06,
+  "dividendYield": 1.05,
   "beta": 0.324,
   "currentPrice": 254.16
  },
@@ -665,7 +665,7 @@
   "forwardPE": 15.762663,
   "returnOnEquity": 0.1166,
   "profitMargins": 0.08396,
-  "dividendYield": 2.51,
+  "dividendYield": 2.43,
   "beta": 0.792,
   "currentPrice": 48.52
  },
@@ -675,14 +675,14 @@
   "forwardPE": 17.326763,
   "returnOnEquity": 0.17323999,
   "profitMargins": 0.19207,
-  "dividendYield": 2.82,
+  "dividendYield": 2.79,
   "beta": 0.746,
   "currentPrice": 360.44
  },
  "SNDK": {
   "shortName": "Sandisk Corporation",
   "trailingPE": 4.7065215,
-  "forwardPE": 2.051192,
+  "forwardPE": 2.0565789,
   "returnOnEquity": 1.41174,
   "profitMargins": 0.67039,
   "dividendYield": 0.0,
@@ -695,7 +695,7 @@
   "forwardPE": 19.235638,
   "returnOnEquity": 0.11897001,
   "profitMargins": 0.16003999,
-  "dividendYield": 3.23,
+  "dividendYield": 3.2,
   "beta": 0.286,
   "currentPrice": 95.0
  },
@@ -705,7 +705,7 @@
   "forwardPE": 34.510323,
   "returnOnEquity": 1.2519699,
   "profitMargins": 0.6309,
-  "dividendYield": 4.0,
+  "dividendYield": 3.93,
   "beta": 1.306,
   "currentPrice": 233.98
  },
@@ -715,7 +715,7 @@
   "forwardPE": 9.327585,
   "returnOnEquity": 0.20812,
   "profitMargins": 0.088190004,
-  "dividendYield": 0.99,
+  "dividendYield": 0.98,
   "beta": 1.443,
   "currentPrice": 216.86
  },
@@ -725,7 +725,7 @@
   "forwardPE": 17.615604,
   "returnOnEquity": 0.29018998,
   "profitMargins": 0.04488,
-  "dividendYield": 2.64,
+  "dividendYield": 2.69,
   "beta": 0.932,
   "currentPrice": 172.22
  },
@@ -735,7 +735,7 @@
   "forwardPE": 23.133362,
   "returnOnEquity": 0.73421997,
   "profitMargins": 0.13455,
-  "dividendYield": 1.77,
+  "dividendYield": 1.75,
   "beta": 0.744,
   "currentPrice": 285.53
  },
@@ -745,7 +745,7 @@
   "forwardPE": 19.622805,
   "returnOnEquity": 0.37347,
   "profitMargins": 0.061300002,
-  "dividendYield": 2.43,
+  "dividendYield": 2.38,
   "beta": 0.484,
   "currentPrice": 40.37
  },
@@ -755,19 +755,19 @@
   "forwardPE": 13.76897,
   "returnOnEquity": 0.28645,
   "profitMargins": 0.0484,
-  "dividendYield": 5.92,
+  "dividendYield": 5.89,
   "beta": 0.948,
   "currentPrice": 111.47
  },
  "VAPORES.SN": {
   "shortName": "COMPANIA SUD AMERICANA DE VAPOR",
-  "trailingPE": 13.836734,
-  "forwardPE": 12.295337,
+  "trailingPE": 13.475783,
+  "forwardPE": 12.253886,
   "returnOnEquity": 0.028299998,
   "profitMargins": 0.0,
   "dividendYield": 8.76,
   "beta": null,
-  "currentPrice": 47.46
+  "currentPrice": 47.3
  },
  "VLO": {
   "shortName": "Valero Energy Corporation",
@@ -775,7 +775,7 @@
   "forwardPE": 6.3057733,
   "returnOnEquity": 0.46872002,
   "profitMargins": 0.08834,
-  "dividendYield": 1.48,
+  "dividendYield": 1.49,
   "beta": 0.552,
   "currentPrice": 323.0
  },
@@ -795,7 +795,7 @@
   "forwardPE": 19.736395,
   "returnOnEquity": 0.12494001,
   "profitMargins": 0.17527,
-  "dividendYield": 3.23,
+  "dividendYield": 3.2,
   "beta": 0.416,
   "currentPrice": 119.09
  },
@@ -805,7 +805,7 @@
   "forwardPE": 27.65458,
   "returnOnEquity": 0.31679,
   "profitMargins": 0.11776,
-  "dividendYield": 1.54,
+  "dividendYield": 1.53,
   "beta": 0.386,
   "currentPrice": 247.29
  },
@@ -815,7 +815,7 @@
   "forwardPE": 12.961356,
   "returnOnEquity": 0.57626,
   "profitMargins": 0.26406,
-  "dividendYield": 2.6,
+  "dividendYield": 2.57,
   "beta": 0.678,
   "currentPrice": 82.6
  }
